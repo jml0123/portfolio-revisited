@@ -1,4 +1,4 @@
-import Nav from '../components/Nav';
+import Nav from '../components/Nav/Nav';
 import '../styles/css/global.css';
 import { AppProps } from 'next/app';
 

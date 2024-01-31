@@ -1,6 +1,6 @@
 export default function Bio() {
     return (
-      <body>
+
         <main>
           <header aria-label="content-header">
             <div className="content-heading-wrapper">
@@ -81,7 +81,7 @@ export default function Bio() {
             </div>
           </section>
         </main>
-      </body>
+   
     );
   }
   

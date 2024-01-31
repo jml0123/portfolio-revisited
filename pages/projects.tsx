@@ -1,6 +1,6 @@
 export default function Projects() {
     return(
-        <body className="works">
+  
         <main>
         <header aria-label="content-header">
             <div className="content-heading-wrapper">
@@ -275,6 +275,6 @@ export default function Projects() {
             </div>
         </section>
     </main>
-    </body>
+
     )
 }
