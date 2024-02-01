@@ -244,7 +244,7 @@
   padding: 0;
   display: inline-block;
 }
-.nav .nav-caption--appear {
+.nav .nav-caption {
   display: none;
   opacity: 0;
   font-size: 13px;
@@ -255,6 +255,15 @@
   color: #FFFCF9;
   padding: 0.3em 0.6em;
   transform-origin: 0%;
+}
+.nav .bio {
+  font-family: "Geist-Light-Mono", monospace;
+}
+.nav .projects {
+  font-family: "Geist-Light-Mono", monospace;
+}
+.nav .media {
+  font-family: "Fromages-Display", serif;
 }
 .nav-logo img {
   max-width: 100%;
@@ -298,7 +307,7 @@
     min-width: 200px;
     align-items: start;
   }
-  .icon:hover > .nav-caption--appear {
+  .icon:hover > .nav-caption {
     display: inline-block;
     opacity: 1;
   }

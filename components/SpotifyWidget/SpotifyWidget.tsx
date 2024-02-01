@@ -1,12 +1,14 @@
 import { SpotifyWidgetData } from './SpotifyWidget.types';
 import styles from '../../styles/scss/SpotifyWidget.module.scss';
-import { useRef, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
+import Image from 'next/image'
+import { IoMusicalNotes } from "react-icons/io5";
 
 
 // TODO: Update widget so it shows album artwork too
 const SpotifyNowPlayingWidget: React.FC<{ data: SpotifyWidgetData }> = ({ data }) => {
 
-  const [wavySpans, setWavySpans] = useState<JSX.Element[]>([]);
+  const [wavyTrackData, setWavyTrackData] = useState<JSX.Element[]>([]);
 
   useEffect(() => {
     const updateText = (text: string) => {
@@ -21,24 +23,31 @@ const SpotifyNowPlayingWidget: React.FC<{ data: SpotifyWidgetData }> = ({ data }
             </span>
           );
 
-          setWavySpans([...spans]);
+          setWavyTrackData([...spans]);
         }, index * 19 + delay);
       });
     };
 
-    updateText(`${data.artist} - ${data.track}`);
+    updateText(`${data.artist} : ${data.track} : album_name : 2021`);
   }, [data]);
 
   return (
     <div className={styles['spotify-now-playing-widget']}>
       <a href={data.url} target="_blank">
+       <Image 
+          src="/img/kenji_hina_album_art.jpeg" 
+          alt="now-playing-album-art" 
+          width="100"
+          height="100"
+          className={styles['album-art']}
+        />
         <div className={styles['badge']}>
+        <span id="now-playing" className={styles['now-playing']}>♪ Now Playing ♪</span>
           <p className={styles['badge-details']} style={{ animationDuration: `${7.33 + (data.artist.length + data.track.length) * 0.113}s` }}>
-            <span role="img" aria-label="music-note">&nbsp;🎵</span>
-            <span id="now-playing" className={styles['now-playing']}>Now Playing: </span>
             <span id="track-info" className={styles['track-info']}>
-    {wavySpans}
-  </span>          </p>
+            {wavyTrackData}
+            </span>
+          </p>
         </div>
       </a>
     </div>

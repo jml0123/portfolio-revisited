@@ -16,7 +16,7 @@ const Nav: React.FC = () => {
           <Link href="/">
             <div className={styles['icon']}>
               <VscRootFolder className={styles['nav-icon']}/>
-              <span className={styles['nav-caption--appear']}>/</span>
+              <span className={styles['nav-caption']}>./</span>
             </div>
           </Link>
         </li>
@@ -24,7 +24,7 @@ const Nav: React.FC = () => {
           <Link href="/projects">
             <div className={styles['icon']}>
               <MdContentCopy className={styles['nav-icon']}/>
-              <span className={styles['nav-caption--appear']}>/projects</span>
+              <span className={styles['nav-caption']}>./<span className={styles.projects}>projects</span></span>
             </div>
           </Link>
         </li>
@@ -32,7 +32,7 @@ const Nav: React.FC = () => {
           <Link href="/bio">
             <div className={styles['icon']}>
               <MdNotes className={styles['nav-icon']}/>
-              <span className={styles['nav-caption--appear']}>/bio</span>
+              <span className={styles['nav-caption']}>./<span className={styles.bio}>about</span></span>
             </div>
           </Link>
         </li>
@@ -40,7 +40,7 @@ const Nav: React.FC = () => {
           <Link href="/media">
             <div className={styles['icon']}>
               <CiMusicNote1 className={styles['nav-icon']}/>
-              <span className={styles['nav-caption--appear']}>/media</span>
+              <span className={styles['nav-caption']}>./<span className={styles.media}>media</span></span>
             </div>
           </Link>
         </li>

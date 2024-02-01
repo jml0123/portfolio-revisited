@@ -46,7 +46,7 @@
         }
     }
     
-    .nav-caption--appear {
+    .nav-caption {
         display: none;
         opacity: 0;
         font-size: $fontSizeDefault;
@@ -59,8 +59,17 @@
         color: $defaultBg;
         padding: 0.3em 0.6em;
         transform-origin: 0%;
+      
     }
-
+    .bio {
+        font-family: $fontNav;
+    }
+    .projects {
+        font-family: $fontNav;
+    }
+    .media {
+        font-family: $fontDisplayFromages;
+    }
 
     &-logo {
         img {
@@ -112,7 +121,7 @@
         align-items: start;
     }
     .icon:hover {
-        > .nav-caption--appear {
+        > .nav-caption {
             display: inline-block;
             // animation: spring 225ms;
             // animation-iteration-count: 1;

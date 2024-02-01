@@ -54,7 +54,7 @@ export default function Home() {
             <div className={styles['intro-content-wrapper--heading']}> 
             <h1><span className={styles['name-span']}>
                         {'>'} i'm miguel_</span> a software eng. 
-                        <span className={styles['intro-content-2']}> creative technologist, and artist in Brooklyn, NY.  
+                        <span className={styles['intro-content-2']}> creative technologist, and DJ in Brooklyn, NY.  
                        As a developer, I strive to implement innovative ideas with meticulous detail and clarity. As a creative, I try to imagine new worlds and possibilities.
                         </span></h1>
             </div>
