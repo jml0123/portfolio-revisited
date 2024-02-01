@@ -1,7 +1,10 @@
+/* LEGACY FONTS */
+/* DEVELOPMENT FONTS */
 /* FONTS */
 /* PADDING */
-/* INTERACTION COLORS */
+/* COLORS */
 /* BREAKPOINTS */
+/* COMPONENTS */
 /* GENERAL */
 @keyframes fadeInBottom {
   0% {
@@ -248,7 +251,7 @@
   width: 100%;
 }
 .content-subheading {
-  font-family: "Source Code Pro", monospace;
+  font-family: "Geist-Light-Mono", monospace;
   font-size: 20px;
   font-weight: 500;
   width: 75%;

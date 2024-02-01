@@ -1,7 +1,10 @@
+/* LEGACY FONTS */
+/* DEVELOPMENT FONTS */
 /* FONTS */
 /* PADDING */
-/* INTERACTION COLORS */
+/* COLORS */
 /* BREAKPOINTS */
+/* COMPONENTS */
 /* GENERAL */
 @keyframes fadeInBottom {
   0% {
@@ -222,7 +225,7 @@
   max-width: none;
   border-radius: 2px;
   white-space: nowrap;
-  font-family: "Source Code Pro", monospace;
+  font-family: "Geist-Light-Mono", monospace;
   font-size: 16.5px;
   align-items: center;
   justify-content: center;

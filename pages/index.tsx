@@ -42,7 +42,8 @@ export default function Home() {
         <div className={styles['intro-wrapper']}> 
           <div className={styles['intro-content-wrapper']}> 
           <div className={styles['intro-content-wrapper--main']}>
-            <div className={styles['title-bar']}>/ software developer</div> 
+             {/* TODO: Make the below animated with different titles */}
+            <div className={styles['title-bar']}>hello world</div> 
             <div className={styles['socials-wrapper']}>
               <a href="mailto:jsmglorenzo@gmail.com" target="_blank"><SiMinutemailer size={ctaIconSize}/></a>
               <a href="https://www.linkedin.com/in/jml123" target="_blank"><SiLinkedin size={ctaIconSize}/></a>
@@ -52,9 +53,9 @@ export default function Home() {
             </div>
             <div className={styles['intro-content-wrapper--heading']}> 
             <h1><span className={styles['name-span']}>
-                        Hi I'm Miguel Lorenzo_</span> a generalist software engineer 
-                        <span className={styles['intro-content-2']}>and creative technologist based in Brooklyn NY. Balancer of micro implementation and macro ideas. 
-                        Synth patch tweaker and former artist manager with strategy consulting experience.
+                        {'>'} i'm miguel_</span> a software eng. 
+                        <span className={styles['intro-content-2']}> creative technologist, and artist in Brooklyn, NY.  
+                       As a developer, I strive to implement innovative ideas with meticulous detail and clarity. As a creative, I try to imagine new worlds and possibilities.
                         </span></h1>
             </div>
             <div className={styles['spotify-widget-wrapper']}>

@@ -1,8 +1,11 @@
 @charset "UTF-8";
+/* LEGACY FONTS */
+/* DEVELOPMENT FONTS */
 /* FONTS */
 /* PADDING */
-/* INTERACTION COLORS */
+/* COLORS */
 /* BREAKPOINTS */
+/* COMPONENTS */
 /* GENERAL */
 @keyframes fadeInBottom {
   0% {
@@ -289,9 +292,10 @@
 }
 
 .title-bar {
-  font-size: 42px;
-  font-family: "Assistant", sans-serif;
+  font-size: 43px;
+  font-family: "Flowstate-Display", serif;
   mix-blend-mode: exclusion;
+  text-shadow: -0.66px 2.66px 2.33px rgba(12, 12, 12, 0.88);
 }
 
 .intro-content-wrapper--main {
@@ -340,13 +344,13 @@
   line-height: 1.26;
   mix-blend-mode: exclusion;
   font-weight: normal;
-  font-family: "Source Code Pro", monospace;
+  font-family: "Geist-Light-Mono", monospace;
   margin-bottom: 0.88em;
 }
 .intro-wrapper .name-span {
   padding: 0 0.3em;
-  color: whitesmoke;
-  background: #0f0f0f;
+  color: #FFFCF9;
+  background: #212121;
   filter: drop-shadow(-5px -2.5px 12px rgba(154, 154, 154, 0.13));
 }
 
@@ -397,10 +401,9 @@
     height: 142px;
   }
   .title-bar {
-    font-size: 47px;
+    font-size: 46.75px;
     font-weight: 500;
-    font-family: "Assistant", sans-serif;
-    padding: 0.4em 0 0.55em 0;
+    padding: 0.4em 0 0.41em 0;
     mix-blend-mode: exclusion;
     cursor: default;
   }
@@ -445,7 +448,7 @@
     max-width: 1500px;
   }
   .intro-wrapper h1 {
-    font-size: 180%;
+    font-size: 177.2%;
     width: 49%;
   }
 }

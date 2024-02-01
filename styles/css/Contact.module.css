@@ -1,7 +1,10 @@
+/* LEGACY FONTS */
+/* DEVELOPMENT FONTS */
 /* FONTS */
 /* PADDING */
-/* INTERACTION COLORS */
+/* COLORS */
 /* BREAKPOINTS */
+/* COMPONENTS */
 /* GENERAL */
 @keyframes fadeInBottom {
   0% {
@@ -250,7 +253,7 @@
 .contact-form input[type=submit] {
   -webkit-appearance: none;
   filter: drop-shadow(-5px -2.5px 12px rgba(154, 154, 154, 0.13));
-  font-family: "Source Code Pro", monospace;
+  font-family: "Geist-Light-Mono", monospace;
   transition: 100ms linear;
   color: white;
   box-shadow: none;

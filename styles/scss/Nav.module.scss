@@ -50,14 +50,14 @@
         display: none;
         opacity: 0;
         font-size: $fontSizeDefault;
-        font-family: $fontHeaders;
+        font-family: $fontNav;
         margin-left: 1em;
         margin-top:  $offset;
         // position: absolute;
         // left: 92.5px;
-        background: #0f0f0f;
-        color: white;
-        padding: 0.33em;
+        background: $nightBg;
+        color: $defaultBg;
+        padding: 0.3em 0.6em;
         transform-origin: 0%;
     }
 

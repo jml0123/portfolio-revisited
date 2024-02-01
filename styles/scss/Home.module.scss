@@ -94,9 +94,10 @@
 }
 
 .title-bar {
-    font-size: 42px;
-    font-family: $fontPrimary;
+    font-size: 43px;
+    font-family: $fontDisplayFlowState;
     mix-blend-mode: $mixBlend1;
+    text-shadow: -0.66px 2.66px 2.33px $subtleBlack;
 }
 
 
@@ -151,8 +152,8 @@
         }
         .name-span {
             padding: 0 0.3em;
-            color: whitesmoke;
-            background: #0f0f0f;
+            color: $defaultBg;
+            background: $nightBg;
             filter: $contentDropShadowLighter;
         }
     }
@@ -213,10 +214,9 @@
 }
 
     .title-bar {
-        font-size: 47px;
+        font-size: 46.75px;
         font-weight: 500;
-        font-family: $fontPrimary;
-        padding: 0.4em 0 0.55em 0;
+        padding: 0.4em 0 0.41em 0;
         mix-blend-mode: $mixBlend1;
         cursor: default;
     }
@@ -273,7 +273,7 @@
         width: 66%;
         max-width: 1500px;
         h1 {
-            font-size: 180%;
+            font-size: 177.2%;
             width: 49%;
           
         
