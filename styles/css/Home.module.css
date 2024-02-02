@@ -293,9 +293,8 @@
 
 .title-bar {
   font-size: 43px;
-  font-family: "Flowstate-Display", serif;
+  font-family: "Crozet-Display", serif;
   mix-blend-mode: exclusion;
-  text-shadow: -0.66px 2.66px 2.33px rgba(12, 12, 12, 0.88);
 }
 
 .intro-content-wrapper--main {
@@ -344,7 +343,7 @@
   line-height: 1.26;
   mix-blend-mode: exclusion;
   font-weight: normal;
-  font-family: "Geist-Light-Mono", monospace;
+  font-family: "Commit-Variable-Mono", monospace;
   margin-bottom: 0.88em;
 }
 .intro-wrapper .name-span {

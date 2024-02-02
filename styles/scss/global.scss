@@ -107,7 +107,7 @@ footer {
 }
 
 
-@media  (min-width: 1024px) {  
+@media  (min-width: $lgBreakPoint) {  
     main {
         flex-direction: row;
         flex-wrap: wrap;
@@ -147,6 +147,34 @@ footer {
         }
     }
 
+    [class|="confetti"]{
+        position: absolute;
+        display: none;
+    }
+
+$confettiColors: ($slideColor3,$slideColor4, $slideColor1, white);
+@for $i from 0 through 50 {
+    $w: random(8);
+    $l: random(100);
+  
+    .confetti-#{$i} {
+        width: #{$w}px;
+        height: #{$w * 1.33}px;
+        background-color: nth($confettiColors, random(4));
+        top: -10%;
+        left: unquote($l + "%");
+        opacity: random() + 0.5;
+        transform: rotate(#{random() * 360}deg);
+        animation: drop-#{$i} unquote(4 + random() + "s") unquote(random() + "s") infinite;
+    }
+  
+    @keyframes drop-#{$i} {
+      100% {
+        top: 110%;
+        left: unquote($l + random(15) + "%");
+      }
+    }
+}
 }
 
  

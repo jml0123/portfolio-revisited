@@ -5,6 +5,7 @@
     border-radius: 2px;
     transform: translateZ(0);
     height: auto;
+    max-height: 100px;
     max-width: 500px;
     min-height: 20px;
     font-size: calc(10px + 6 * ((100vw - 320px) / 700));
@@ -18,7 +19,7 @@
         display: flex;
     }
     .badge {
-        padding: 6px 0;
+        padding: 1px 0 0 0;
         margin: 0;
         overflow-x: hidden;
         transform: translateZ(0);
@@ -29,7 +30,7 @@
     .badge-details {
         // background: $slideColor2;
         transform: translateZ(0);
-        margin: 2em 0;
+        margin: 2em 0 0 0;
         border-radius: 2px;
         animation-name: scroll;
         animation-duration: 12s;
@@ -39,28 +40,36 @@
 
     }
     .track-info {
-        font-family: $fontDisplayFlowState;
-        width: auto;
-        font-size: small;
+        font-family: $fontSmallAccent;
+        font-size: smaller;
         color: $textHoverColor;
     }
     .now-playing  {
-        font-size: small;
-        font-family: $fontDisplayCrozet;
+        font-size: smaller;
+        font-family: $fontSmallAccent;
         color: $textHoverColor;
     }
+    .album-art {
+        margin: 0 1em 0 0;
+        display: inline-block;
+        padding: 0;
+        width: 75px; 
+        height: 75px;
+        box-shadow: -1.33px 3.33px 6px rgba(0, 0, 0, 0.2); /* Add a subtle drop shadow */
+    }
+    &:hover .now-playing {
+        color: $linksColor
+    }
+    &:hover .track-info {
+        color: $linksColor
+    }
 }
-.album-art {
-    margin: 2px 17px 2px 2px;
-    display: inline-block;
-    border-radius: 2.3px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle drop shadow */
-}
+
 
 .wavy {
     animation-name: wavy;
-    animation-duration: 1.3s;
-    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-duration: 1.2333s;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     position: relative;
     top: 0;
@@ -79,11 +88,14 @@
         .badge-details{
             //background: transparent;
         }
+        .album-art {
+            width: 90px;  
+            height: 90px;
+            border-radius: 0;
+        }
         .track-info {
-            font-size: medium;
+            font-size: 15px;
         }
-        .now-playing  {
-            font-size: medium;
-        }
+
     }
 }

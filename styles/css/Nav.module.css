@@ -248,7 +248,7 @@
   display: none;
   opacity: 0;
   font-size: 13px;
-  font-family: "Geist-Light-Mono", monospace;
+  font-family: "Commit-Variable-Mono", monospace;
   margin-left: 1em;
   margin-top: 1.366px;
   background: #212121;
@@ -256,11 +256,11 @@
   padding: 0.3em 0.6em;
   transform-origin: 0%;
 }
-.nav .bio {
-  font-family: "Geist-Light-Mono", monospace;
-}
 .nav .projects {
-  font-family: "Geist-Light-Mono", monospace;
+  font-family: "Commit-Variable-Mono", monospace;
+}
+.nav .bio {
+  font-family: "Commit-Variable-Mono", monospace;
 }
 .nav .media {
   font-family: "Fromages-Display", serif;

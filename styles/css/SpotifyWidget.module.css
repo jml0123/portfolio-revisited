@@ -203,6 +203,7 @@
   border-radius: 2px;
   transform: translateZ(0);
   height: auto;
+  max-height: 100px;
   max-width: 500px;
   min-height: 20px;
   font-size: calc(10px + 6 * (100vw - 320px) / 700);
@@ -216,7 +217,7 @@
   display: flex;
 }
 .spotify-now-playing-widget .badge {
-  padding: 6px 0;
+  padding: 1px 0 0 0;
   margin: 0;
   overflow-x: hidden;
   transform: translateZ(0);
@@ -225,7 +226,7 @@
 }
 .spotify-now-playing-widget .badge-details {
   transform: translateZ(0);
-  margin: 2em 0;
+  margin: 2em 0 0 0;
   border-radius: 2px;
   animation-name: scroll;
   animation-duration: 12s;
@@ -235,27 +236,33 @@
 }
 .spotify-now-playing-widget .track-info {
   font-family: "Flowstate-Display", serif;
-  width: auto;
-  font-size: small;
+  font-size: smaller;
   color: rgba(42, 42, 42, 0.6509803922);
 }
 .spotify-now-playing-widget .now-playing {
-  font-size: small;
-  font-family: "Crozet-Display", serif;
+  font-size: smaller;
+  font-family: "Flowstate-Display", serif;
   color: rgba(42, 42, 42, 0.6509803922);
 }
-
-.album-art {
-  margin: 2px 17px 2px 2px;
+.spotify-now-playing-widget .album-art {
+  margin: 0 1em 0 0;
   display: inline-block;
-  border-radius: 2.3px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle drop shadow */
+  padding: 0;
+  width: 75px;
+  height: 75px;
+  box-shadow: -1.33px 3.33px 6px rgba(0, 0, 0, 0.2); /* Add a subtle drop shadow */
+}
+.spotify-now-playing-widget:hover .now-playing {
+  color: #0186FF;
+}
+.spotify-now-playing-widget:hover .track-info {
+  color: #0186FF;
 }
 
 .wavy {
   animation-name: wavy;
-  animation-duration: 1.3s;
-  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-duration: 1.2333s;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   position: relative;
   top: 0;
@@ -271,11 +278,13 @@
     width: 100%;
     color: black;
   }
-  .spotify-now-playing-widget .track-info {
-    font-size: medium;
+  .spotify-now-playing-widget .album-art {
+    width: 90px;
+    height: 90px;
+    border-radius: 0;
   }
-  .spotify-now-playing-widget .now-playing {
-    font-size: medium;
+  .spotify-now-playing-widget .track-info {
+    font-size: 15px;
   }
 }
 

@@ -24,25 +24,25 @@ const SpotifyNowPlayingWidget: React.FC<{ data: SpotifyWidgetData }> = ({ data }
           );
 
           setWavyTrackData([...spans]);
-        }, index * 19 + delay);
+        }, index * 20 + delay);
       });
     };
 
-    updateText(`${data.artist} : ${data.track} : album_name : 2021`);
+    updateText(` ${data.artist} : ${data.track} : album_name : 2021 `);
   }, [data]);
 
   return (
     <div className={styles['spotify-now-playing-widget']}>
       <a href={data.url} target="_blank">
-       <Image 
+      <Image 
           src="/img/kenji_hina_album_art.jpeg" 
           alt="now-playing-album-art" 
-          width="100"
-          height="100"
+          width={75} 
+          height={75} 
           className={styles['album-art']}
         />
         <div className={styles['badge']}>
-        <span id="now-playing" className={styles['now-playing']}>♪ Now Playing ♪</span>
+        <span id="now-playing" className={styles['now-playing']}>♫ Now Playing ♫</span>
           <p className={styles['badge-details']} style={{ animationDuration: `${7.33 + (data.artist.length + data.track.length) * 0.113}s` }}>
             <span id="track-info" className={styles['track-info']}>
             {wavyTrackData}

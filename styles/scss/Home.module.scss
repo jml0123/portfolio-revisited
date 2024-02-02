@@ -95,9 +95,9 @@
 
 .title-bar {
     font-size: 43px;
-    font-family: $fontDisplayFlowState;
+    font-family: $fontDisplayCrozet;
     mix-blend-mode: $mixBlend1;
-    text-shadow: -0.66px 2.66px 2.33px $subtleBlack;
+    // text-shadow: -0.66px 2.66px 2.33px $subtleBlack;
 }
 
 
@@ -275,6 +275,7 @@
         h1 {
             font-size: 177.2%;
             width: 49%;
+            
           
         
         }

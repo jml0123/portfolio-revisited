@@ -34,14 +34,15 @@ $fontMonoNecto: "Necto-Mono", monospace;
 $fontMonoSilka: "Silka-Mono", monospace;
 
 
-/* FONTS */
+/* FONTS */ 
 // $fontPrimary: $fontSansAssistant;
 $fontPrimary: $fontSansGeist;
-$fontSecondary: $fontSansRoboto;
+// $fontSecondary: $fontSansRoboto;
+$fontSecondary: $fontSansGeistLight;
 // $fontHeaders: $fontMonoSourceCode;
 // $fontHeaders: $fontMonoGeistVariable;
-// $fontHeaders: $fontMonoGeistLight;
-$fontHeaders: $fontMonoCommitVariable;
+$fontHeaders: $fontMonoGeistLight;
+// $fontHeaders: $fontMonoCommitVariable;
 $fontNav: $fontHeaders;
 $fontSmallAccent: $fontDisplayFlowState;
 
