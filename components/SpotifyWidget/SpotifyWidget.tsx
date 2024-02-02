@@ -12,7 +12,7 @@ const SpotifyNowPlayingWidget: React.FC<{ data: SpotifyWidgetData }> = ({ data }
 
   useEffect(() => {
     const updateText = (text: string) => {
-      let delay = 150;
+      let delay = 66;
       const spans: JSX.Element[] = [];
 
       text.split('').forEach((letter, index) => {
@@ -24,18 +24,37 @@ const SpotifyNowPlayingWidget: React.FC<{ data: SpotifyWidgetData }> = ({ data }
           );
 
           setWavyTrackData([...spans]);
-        }, index * 20 + delay);
+        }, index * 33 + delay);
       });
     };
 
-    updateText(` ${data.artist} : ${data.track} : album_name : 2021 `);
+    let trackData = '';
+
+    if (data.artist) {
+      trackData += ` ${data.artist}`;
+    }
+
+    if (data.track) {
+      trackData += ` : ${data.track}`;
+    }
+
+    if (data.album) {
+      trackData += ` : ${data.album}`;
+    }
+
+    if (data.releaseDate) {
+      const year = data.releaseDate.substring(0, 4);
+      trackData += ` : ${year}`;
+    }
+
+    updateText(` ${trackData} `);
   }, [data]);
 
   return (
     <div className={styles['spotify-now-playing-widget']}>
       <a href={data.url} target="_blank">
       <Image 
-          src="/img/kenji_hina_album_art.jpeg" 
+          src={data.imageUrl}
           alt="now-playing-album-art" 
           width={75} 
           height={75} 

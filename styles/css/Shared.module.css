@@ -223,21 +223,13 @@
 }
 
 .content-heading {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
+  font-family: "Flowstate-Display", serif;
   margin-bottom: 0;
-  font-size: 350%;
-  -webkit-text-stroke-width: 1.66px;
-  letter-spacing: 1.35px;
-  color: transparent;
-}
-.content-heading--work {
-  -webkit-text-stroke-color: rgba(1, 134, 255, 0.66);
-  filter: drop-shadow(0.5px 0.5px 100px rgba(1, 134, 255, 0.66));
+  font-size: 333%;
+  color: rgba(42, 42, 42, 0.651);
 }
 .content-heading--bio {
   -webkit-text-stroke-color: rgba(240, 177, 9, 0.66);
-  filter: drop-shadow(0.5px 0.5px 100px rgba(240, 177, 9, 0.66));
 }
 .content-heading--contact {
   -webkit-text-stroke-color: rgba(14, 104, 152, 0.66);
@@ -251,7 +243,7 @@
   width: 100%;
 }
 .content-subheading {
-  font-family: "Commit-Variable-Mono", monospace;
+  font-family: "Geist-Light-Mono", monospace;
   font-size: 20px;
   font-weight: 500;
   width: 75%;
@@ -261,7 +253,6 @@
   height: auto;
   padding: 1.5vh 0;
   text-align: center;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -278,6 +269,7 @@
     padding: 0 auto;
   }
   .content-heading-wrapper {
+    width: 100vw;
     flex-direction: row;
     align-items: left;
   }
@@ -287,6 +279,7 @@
   .content-subheading {
     margin: 0 0 0 5%;
     width: 100%;
+    min-width: 500px;
     padding: 0 auto;
     margin: 0 auto;
     text-align: left;

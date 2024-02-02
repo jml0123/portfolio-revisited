@@ -24,20 +24,20 @@
   }
   .content {
       &-heading {
-          font-family: $fontSecondary;
-          font-weight: 900;
+          font-family: $fontDisplayFlowState;
+          // font-weight: 900;
           margin-bottom: 0;
-          font-size: 350%;
-          -webkit-text-stroke-width: 1.66px;
-          letter-spacing: 1.35px;
-          color: $headerColor;
+          font-size: 333%;
+          // -webkit-text-stroke-width: 1px;
+          color: $headerColorAccent1;
           &--work {
-              -webkit-text-stroke-color: $headerColorAccent1;
-              filter: drop-shadow(0.5px 0.5px 100px $headerColorAccent1);
+              // -webkit-text-stroke-color: $headerColorAccent2;
+              // filter: drop-shadow(0.5px 0.5px 100px $headerColorAccent1);
           }
           &--bio {
+              // font-family: $fontDisplayCrozet;
               -webkit-text-stroke-color: $headerColorAccent2;
-              filter: drop-shadow(0.5px 0.5px 100px $headerColorAccent2);
+              // filter: drop-shadow(0.5px 0.5px 100px $headerColorAccent2);
           }
           &--contact {
               -webkit-text-stroke-color: $headerColorAccent3;
@@ -61,7 +61,6 @@
               height: auto;
               padding: 1.5vh 0;
               text-align: center;
-              width: 100%;
               display: flex;
               align-items: center; 
               justify-content: center;
@@ -81,7 +80,7 @@
             padding: 0 auto;
 
           &-wrapper {
-       
+                width: 100vw;
               flex-direction: row;
               align-items: left;
               &--contact{
@@ -92,6 +91,7 @@
         &-subheading {
             margin: 0 0 0 5%;
             width: 100%;
+            min-width: 500px;
             padding: 0 auto;
             margin: 0 auto;
             text-align: left;

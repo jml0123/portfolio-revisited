@@ -206,7 +206,7 @@
 }
 
 .icon:hover {
-  color: rgba(42, 42, 42, 0.6509803922);
+  color: rgba(42, 42, 42, 0.651);
 }
 
 .nav-icon {
@@ -248,7 +248,7 @@
   display: none;
   opacity: 0;
   font-size: 13px;
-  font-family: "Commit-Variable-Mono", monospace;
+  font-family: "Geist-Light-Mono", monospace;
   margin-left: 1em;
   margin-top: 1.366px;
   background: #212121;
@@ -257,10 +257,10 @@
   transform-origin: 0%;
 }
 .nav .projects {
-  font-family: "Commit-Variable-Mono", monospace;
+  font-family: "Geist-Light-Mono", monospace;
 }
 .nav .bio {
-  font-family: "Commit-Variable-Mono", monospace;
+  font-family: "Geist-Light-Mono", monospace;
 }
 .nav .media {
   font-family: "Fromages-Display", serif;

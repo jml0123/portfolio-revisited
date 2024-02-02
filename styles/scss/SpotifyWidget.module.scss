@@ -2,6 +2,7 @@
 @import '../animations/global.animations.scss'; 
 
 .spotify-now-playing-widget {
+    animation: fadeIn 0.416s;
     border-radius: 2px;
     transform: translateZ(0);
     height: auto;
@@ -30,7 +31,7 @@
     .badge-details {
         // background: $slideColor2;
         transform: translateZ(0);
-        margin: 2em 0 0 0;
+        margin: 1.5em 0 0 0;
         border-radius: 2px;
         animation-name: scroll;
         animation-duration: 12s;
@@ -53,9 +54,9 @@
         margin: 0 1em 0 0;
         display: inline-block;
         padding: 0;
-        width: 75px; 
-        height: 75px;
-        box-shadow: -1.33px 3.33px 6px rgba(0, 0, 0, 0.2); /* Add a subtle drop shadow */
+        width: 69.66px; 
+        height: 69.66px;
+        box-shadow: -1.33px 3.33px 6px rgba(0, 0, 0, 0.16); /* Add a subtle drop shadow */
     }
     &:hover .now-playing {
         color: $linksColor
@@ -89,8 +90,8 @@
             //background: transparent;
         }
         .album-art {
-            width: 90px;  
-            height: 90px;
+            width: 82.33px;  
+            height:82.33px;
             border-radius: 0;
         }
         .track-info {

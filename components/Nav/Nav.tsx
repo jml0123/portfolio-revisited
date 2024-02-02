@@ -13,12 +13,12 @@ const Nav: React.FC = () => {
             <ul className={styles.navList}>
             <li>
        
-          <Link href="/">
-            <div className={styles['icon']}>
-              <VscRootFolder className={styles['nav-icon']}/>
-              <span className={styles['nav-caption']}>./</span>
-            </div>
-          </Link>
+            <Link href="/">
+              <div className={styles['icon']}>
+                <VscRootFolder className={styles['nav-icon']}/>
+                <span className={styles['nav-caption']}>./</span>
+              </div>
+            </Link>
         </li>
         <li>
           <Link href="/projects">

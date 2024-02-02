@@ -113,6 +113,14 @@
   }
 
   @font-face {
+    font-family: 'Geist-Bold-SansSerif';
+    src: url('/fonts/Geist/Geist-Black.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  @font-face {
     font-family: 'Geist-Light-SansSerif';
     src: url('/fonts/Geist/Geist-Light.woff2') format('woff2');
     font-weight: normal;

@@ -265,7 +265,7 @@
   margin: 1% 50px 0 0;
 }
 .socials-wrapper a:hover {
-  color: rgba(42, 42, 42, 0.6509803922);
+  color: rgba(42, 42, 42, 0.651);
 }
 
 .socials-icon {
@@ -343,7 +343,7 @@
   line-height: 1.26;
   mix-blend-mode: exclusion;
   font-weight: normal;
-  font-family: "Commit-Variable-Mono", monospace;
+  font-family: "Geist-Light-Mono", monospace;
   margin-bottom: 0.88em;
 }
 .intro-wrapper .name-span {

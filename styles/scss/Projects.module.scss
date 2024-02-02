@@ -1,3 +1,6 @@
+@import '../variables/global.variables.scss'; 
+@import '../animations/global.animations.scss'; 
+
 .works {
     overflow: auto;
     max-height: none;
@@ -5,5 +8,5 @@
 
 .projects {
     width: 100vw;
-    outline: 1px solid blue;
+    // outline: 1px solid blue;
 }

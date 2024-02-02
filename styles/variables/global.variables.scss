@@ -20,6 +20,7 @@ $fontDisplayFlowState: "Flowstate-Display", serif;
 $fontSansAmiamieRegular: "Amiamie-SansSerif", sans-serif;
 $fontSansAmiamieLight: "Amiamie-Light-SansSerif", sans-serif;
 $fontSansAmiamieRound: "Amiamie-Round-SansSerif", sans-serif;
+$fontSansGeistBold: "Geist-Bold-SansSerif", sans-serif;
 $fontSansGeist: "Geist-SansSerif", sans-serif;
 $fontSansGeistLight: "Geist-Light-SansSerif", sans-serif;
 $fontMonoBasier: "Basier-Mono", monospace;
@@ -37,6 +38,7 @@ $fontMonoSilka: "Silka-Mono", monospace;
 /* FONTS */ 
 // $fontPrimary: $fontSansAssistant;
 $fontPrimary: $fontSansGeist;
+$fontPrimaryBold: $fontSansGeistBold;
 // $fontSecondary: $fontSansRoboto;
 $fontSecondary: $fontSansGeistLight;
 // $fontHeaders: $fontMonoSourceCode;
@@ -60,7 +62,7 @@ $subtleTextPadding: 15px;
 
 /* COLORS */
 // Interaction
-$textHoverColor: #2a2a2aa6;
+
 
 // Background
 $nightBg: #212121;
@@ -80,13 +82,15 @@ $contentDropShadowLighter: drop-shadow(-5px -2.5px 12px rgba(154, 154, 154, 0.13
 $mixBlend1: exclusion;
 
 // Text
-$headerColor: transparent;
-$headerColorAccent1: rgba(1,134,255, 0.66);
+$headerColorAccent1: rgba(42, 42, 42, 0.651);
 $headerColorAccent2: rgba(240,177,9,0.66);
 $headerColorAccent3: rgba(14,104,152, 0.66);
 $bodyTextColor: #2b2b2b;
 $subtleBlack: rgba(12, 12, 12, 0.88);
 $linksColor: #0186FF;
+$headerColor: $bodyTextColor;
+$textHoverColor: rgba(42, 42, 42, 0.651);
+
 
 /* BREAKPOINTS */
 $lgBreakPoint: 1024px;
