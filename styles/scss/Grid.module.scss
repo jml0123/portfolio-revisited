@@ -43,6 +43,8 @@
         border-radius: 4px;
         overflow: hidden;
         box-shadow: $gridBoxShadow;
+        animation: fadeIn 0.55s;
+
         // border: 2px solid $gridItemBorder;
      
         &:hover  {
@@ -261,10 +263,10 @@
         }
     }
     &-wrapper {
-        // outline: 1px solid red;
+        // outline: 1px solid blue;
         height: auto;
         margin: 2% auto;
-        padding: $paddingDefault;
+        // padding: $paddingDefault;
     }
     &-item {
         max-height: 800px;
@@ -293,6 +295,7 @@
    }
    .label-tech {
     font-size: 12px;
+    border-radius: 4.33px;
     }
 
     .blank-work {

@@ -1,5 +1,7 @@
+import { useEffect } from 'react';
 import styles from '../../styles/scss/Grid.module.scss';
 import { GridItemData } from './Grid.types';
+import { useSpring, animated } from '@react-spring/web';
 
 
 export const Grid: React.FC<{items: GridItemData[]}> = ({items}) => {
@@ -8,7 +10,7 @@ export const Grid: React.FC<{items: GridItemData[]}> = ({items}) => {
           <div className={styles['grid']}>
             {/* SPECIAL GRID ITEM */}
             <a href="contact.html" className={styles['grid-contact-link']}>
-              <div className={`${styles['grid-item']} ${styles['grid-item--10']} ${styles['blank-work']}`}>
+              <div className={`${styles['grid-item']} ${styles['grid-item']} ${styles['blank-work']}`}>
                 <div className={styles['grid-item-container']}>
                   <div className={styles['grid-contact']}>
                     <p>Let's work on the next thing together</p>
@@ -33,8 +35,14 @@ export const Grid: React.FC<{items: GridItemData[]}> = ({items}) => {
 
 
 export const GridItem: React.FC<{ data: GridItemData, index: number }> = ({ data, index }) => {
-return(
-    <div className={`${styles['grid-item']} ${styles[`grid-item--${index}`]}`}>
+  const [props ] = useSpring(() => ({
+    opacity: 1,
+    from: { opacity: 0 },
+    config: { tension: 300, friction: 10 },
+  }));
+
+  return (
+    <animated.div style={props} className={`${styles['grid-item']} ${styles[`grid-item--${index}`]}`}>
       {index}
       <div className={styles['grid-item-container']}>
         <div className={styles["img-mask"]}></div>
@@ -50,13 +58,13 @@ return(
                    {data.description}
                 </p>
                 <div className={`${styles["links-wrapper"]} ${styles["links-wrapper--grid"]}`}>
-                    <a className={styles["live"]} target="_blank" href={data.liveUrl}>Live</a>
-                    <a className={styles["repo"]} target="_blank" href={data.repoUrl}>Repo</a>
+                    {data.liveUrl && <a className={styles["live"]} target="_blank" href={data.liveUrl}>Live</a>}
+                    {data.repoUrl && <a className={styles["repo"]} target="_blank" href={data.repoUrl}>Repo</a>}
                 </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-)
+    </animated.div>
+  );
 }

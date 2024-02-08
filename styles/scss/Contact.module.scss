@@ -90,35 +90,7 @@
 .form-heading {
     display: none;
 }
-.globe {
-    display: none;
-    padding: 7%;
-    margin-left: -8vw;
-    &-wrapper {
-        min-width: 60%;
-        max-width: 60%;
-        position: fixed;
-        min-height: 100vh;
-        max-height: 100vh;
-        opacity: 0.66;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 2;
-  
-        //overflow: hidden;
-        
-        img {
-            object-fit: cover;
-            border-radius: 100%; 
-            position: absolute;
-            width: 62vw;
-            max-width: 888px;
-            min-width: 420px;
-            filter: $contentDropShadowLighter;
-        }
-    }
-}
+
 
 @media (min-width: $lgBreakPoint) {
     .contact {

@@ -1,8 +1,8 @@
-import { Grid } from '../components/Grid/Grid';
 import { projectsGridData } from './data/projects.data';
 
 import styles from '../styles/scss/Projects.module.scss'; 
 import sharedStyles from '../styles/scss/Shared.module.scss'; 
+import FilterableGrid from '../components/FilterGrid/FilterGrid';
 
 export default function Projects() {
     return (
@@ -16,7 +16,7 @@ export default function Projects() {
             </div>
           </header>
           <section role="region" aria-label="content-2" className={styles.projects}>
-            <Grid items={projectsGridData}/>
+            <FilterableGrid items={projectsGridData}/>
           </section>
         </main>
       );

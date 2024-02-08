@@ -1,0 +1,55 @@
+/* LEGACY FONTS */
+/* DEVELOPMENT FONTS */
+/* FONTS */
+/* PADDING */
+/* COLORS */
+/* BREAKPOINTS */
+/* COMPONENTS */
+/* GENERAL */
+.filter-grid-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 2% auto 2.5vh auto;
+  min-width: 100%;
+  overflow: auto;
+  max-height: none;
+  width: 100%;
+}
+
+.filter-list {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-word {
+  font-size: 14px;
+  margin: 0 0.33em;
+  padding: 0.2em 0.7em;
+  border-radius: 10px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: lightgrey;
+}
+.filter-word-active {
+  background-color: #C2E0C6;
+}
+.filter-word:hover {
+  background-color: #C2E0C6;
+}
+
+@media (min-width: 1024px) {
+  .filter-grid-wrapper {
+    width: 100%;
+    height: auto;
+    margin: 2% auto;
+    max-width: 33%;
+    padding: 22px;
+  }
+}
+
+/*# sourceMappingURL=FilterGrid.module.css.map */

@@ -1,8 +1,14 @@
 @import '../variables/global.variables.scss'; 
 @import '../animations/global.animations.scss'; 
 
-.spotify-now-playing-widget {
+
+.fade-in {
     animation: fadeIn 0.416s;
+}
+.fade-out {
+    animation: fadeOut 0.88s;
+}
+.spotify-now-playing-widget {
     border-radius: 2px;
     transform: translateZ(0);
     height: auto;
@@ -54,6 +60,7 @@
         margin: 0 1em 0 0;
         display: inline-block;
         padding: 0;
+        // border-radius: 100%;
         width: 69.66px; 
         height: 69.66px;
         box-shadow: -1.33px 3.33px 6px rgba(0, 0, 0, 0.16); /* Add a subtle drop shadow */
@@ -80,7 +87,7 @@
 
 @media (min-width: $lgBreakPoint) {
     .spotify-now-playing-widget {
-        font-size: 17px;
+        font-size: 15.33px;
         .badge {
             max-width: none;
             width: 100%;
@@ -90,13 +97,9 @@
             //background: transparent;
         }
         .album-art {
-            width: 82.33px;  
-            height:82.33px;
-            border-radius: 0;
+            width: 80.27px;  
+            height:80.27px;
         }
-        .track-info {
-            font-size: 15px;
-        }
-
+     
     }
 }
