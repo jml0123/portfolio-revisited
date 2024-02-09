@@ -17,6 +17,7 @@
     display: flex;
     gap: 10px;
     margin-bottom: 10px;
+    max-width: 66%;
     flex-wrap: wrap;
   }
   
@@ -26,15 +27,16 @@
     padding: 0.2em 0.7em;
     border-radius: 10px;
     white-space: nowrap;
+    font-family: $fontHeaders;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    background-color: lightgrey;
+    background-color: rgb(238, 233, 233);
     &-active {
-        background-color: #C2E0C6;;
+        background-color: #afafaf;;
     }
   
     &:hover {
-      background-color: #C2E0C6;
+      background-color: #afafaf;
     }
   }
 
