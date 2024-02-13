@@ -363,18 +363,18 @@
 .links-wrapper a {
   text-decoration: none;
 }
-.links-wrapper .live, .links-wrapper .repo {
+.links-wrapper .live, .links-wrapper .repo, .links-wrapper .preview {
   margin: 0 10%;
 }
-.links-wrapper .live:hover, .links-wrapper .repo:hover {
+.links-wrapper .live:hover, .links-wrapper .repo:hover, .links-wrapper .preview:hover {
   color: white;
   text-decoration: underline;
 }
 .links-wrapper--grid {
   width: 85%;
 }
-.links-wrapper--grid .live, .links-wrapper--grid .repo {
-  width: 40px;
+.links-wrapper--grid .live, .links-wrapper--grid .repo, .links-wrapper--grid .preview {
+  width: 80px;
   font-size: 90%;
   transition: 70ms linear;
   color: lightblue;
@@ -382,7 +382,7 @@
   letter-spacing: 1.1px;
   text-transform: uppercase;
 }
-.links-wrapper--grid .live:hover, .links-wrapper--grid .repo:hover {
+.links-wrapper--grid .live:hover, .links-wrapper--grid .repo:hover, .links-wrapper--grid .preview:hover {
   background: rgba(255, 255, 255, 0.92);
   color: black;
   text-decoration: none;
@@ -391,20 +391,20 @@
 .links-wrapper--slide {
   width: 100%;
 }
-.links-wrapper--slide .live, .links-wrapper--slide .repo {
+.links-wrapper--slide .live, .links-wrapper--slide .repo, .links-wrapper--slide .preview {
   color: white;
 }
 .links-wrapper--contact {
   padding: 22px;
   font-size: 88%;
 }
-.links-wrapper--contact .live, .links-wrapper--contact .repo {
+.links-wrapper--contact .live, .links-wrapper--contact .repo, .links-wrapper--contact .preview {
   font-family: "Geist-SansSerif", sans-serif;
   font-weight: bold;
   color: black;
   margin: 8% 5%;
 }
-.links-wrapper--contact .live:hover, .links-wrapper--contact .repo:hover {
+.links-wrapper--contact .live:hover, .links-wrapper--contact .repo:hover, .links-wrapper--contact .preview:hover {
   color: rgb(238, 226, 121);
 }
 
@@ -441,30 +441,6 @@
     max-height: 800px;
     min-width: 100%;
     margin: 0 auto;
-  }
-  .grid-item--10 {
-    grid-area: span 2/span 1;
-  }
-  .grid-item--9 {
-    grid-area: span 2/span 2;
-  }
-  .grid-item--8 {
-    grid-area: span 2/span 1;
-  }
-  .grid-item--7 {
-    grid-area: span 2/span 2;
-  }
-  .grid-item--6 {
-    grid-area: span 2/span 1;
-  }
-  .grid-item--5 {
-    grid-area: span 2/span 2;
-  }
-  .grid-item--4 {
-    grid-area: span 2/span 1;
-  }
-  .grid-item--3 {
-    grid-area: span 2/span 2;
   }
   .grid-item--2 {
     grid-area: span 2/span 1;

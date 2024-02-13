@@ -6,7 +6,7 @@ import FilterableGrid from '../components/FilterGrid/FilterGrid';
 
 export default function Projects() {
     return (
-        <main>
+        <main className={styles.building}>
           <header aria-label="content-header">
             <div className={sharedStyles['content-heading-wrapper']}>
               <h1 className={`${sharedStyles['content-heading']} ${sharedStyles['content-heading--work']}`}>projects</h1>

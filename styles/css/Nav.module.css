@@ -312,10 +312,9 @@
   }
   .icon {
     display: flex;
-    min-width: 200px;
     align-items: start;
   }
-  .icon:hover > .nav-caption {
+  .icon:hover ~ .nav-caption {
     display: inline-block;
     opacity: 1;
   }

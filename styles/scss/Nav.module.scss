@@ -117,17 +117,15 @@
     }
     .icon {
         display: flex;
-        min-width: 200px;
         align-items: start;
+        // outline: 1px solid red;
     }
-    .icon:hover {
-        > .nav-caption {
+    .icon:hover ~ .nav-caption {
             display: inline-block;
             // animation: spring 225ms;
             // animation-iteration-count: 1;
             opacity: 1;
 
-        }
     }
 
 }

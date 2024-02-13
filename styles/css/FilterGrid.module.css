@@ -47,10 +47,11 @@
 @media (min-width: 1024px) {
   .filter-grid-wrapper {
     width: 100%;
-    height: auto;
     margin: 2% auto;
     max-width: 33%;
     padding: 22px;
+    min-height: 100%;
+    flex: 1 0;
   }
 }
 

@@ -46,10 +46,13 @@
     .filter-grid-wrapper {
         // outline: 1px solid red;
         width: 100%;
-        height: auto;
         margin: 2% auto;
         max-width: 33%;
         padding: $paddingDefault;
+        min-height: 100%;
+        // outline: 1px solid red;
+        flex: 1 0;
+        
     }
     
 }

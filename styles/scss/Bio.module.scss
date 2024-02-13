@@ -5,7 +5,11 @@
     animation: fadeIn 0.55s;
     animation-iteration-count: 1;
   }
-  
+
+.about {
+    @include radialGradientBackground($orb-color3, $defaultBg);
+}
+
 .label {
     margin: 0 0.4em;
     padding: 0.2em 0.4em;
@@ -73,10 +77,17 @@
     }
 }
 
-.globe {
+.focus-img {
     display: none;
     padding: 7%;
     margin-left: -8vw;
+    object-fit: cover;
+    border-radius: 10px; 
+    position: absolute;
+    width: 62vw;
+    max-width: 888px;
+    min-width: 420px;
+    filter: $contentDropShadowLighter;
     &-wrapper {
         min-width: 60%;
         max-width: 60%;
@@ -90,29 +101,19 @@
         z-index: 2;
   
         //overflow: hidden;
-        
-        img {
-            object-fit: cover;
-            border-radius: 100%; 
-            position: absolute;
-            width: 62vw;
-            max-width: 888px;
-            min-width: 420px;
-            filter: $contentDropShadowLighter;
-        }
     }
 }
 
 @media (min-width: $lgBreakPoint) {
     .bio {
-
+    
         > div { 
             margin-top: 7vh;
-            position: absolute;
+            // position: absolute;
         }
     }
     .bio {
-        height: 100%;
+        //height: 100%;
         &-container { 
             &--image {
                 margin: 0;
@@ -132,7 +133,7 @@
             }
         }
     }
-    .globe {
+    .focus-img {
         display: block;
         opacity: 0.88;
     }

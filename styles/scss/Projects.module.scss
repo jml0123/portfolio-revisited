@@ -7,6 +7,12 @@
 }
 
 .projects {
-    width: 100vw;
-    // outline: 1px solid blue;
+    width: auto;
+    flex: 1;
+}
+
+.building {
+    @include radialGradientBackground($orb-color3, $defaultBg);
+    flex-direction: column;
+    min-height: 100vh;
 }

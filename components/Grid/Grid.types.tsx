@@ -5,4 +5,5 @@ export interface GridItemData {
     imageUrl: string;
     liveUrl?: string;
     repoUrl?: string;
+    previewUrl?: string;
 }

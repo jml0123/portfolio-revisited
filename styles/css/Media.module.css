@@ -207,6 +207,11 @@
     top: 0px;
   }
 }
+.beyond {
+  background: radial-gradient(circle, rgba(156, 123, 245, 0.8431372549) 13%, #FFFCF9 48%) 0 0 no-repeat;
+  background-attachment: fixed;
+}
+
 .media-content-wrapper--data {
   height: 100%;
   display: flex;
@@ -242,7 +247,12 @@
   max-height: 15px;
   font-size: small;
   font-family: "Geist-Light-Mono", monospace;
-  color: #aaaaaa;
+  color: #aaaaaa .media-heading-line --before;
+  color-font-family: "Fromages-Display", serif;
+  color-font-size: xx-small;
+  color-color: #b5b5b5;
+  color-margin-right: 0.66em;
+  color-cursor: default;
 }
 
 .embed-release-date {
@@ -266,6 +276,8 @@
   flex-direction: column;
   align-items: left;
   padding: 22px;
+  height: auto;
+  background-color: transparent;
 }
 .media-container--image {
   min-width: 150px;
@@ -292,10 +304,6 @@
 @media (min-width: 1024px) {
   .media > div {
     margin-top: 7vh;
-    position: absolute;
-  }
-  .media {
-    height: 100%;
   }
   .media-wrapper p {
     font-size: 120%;

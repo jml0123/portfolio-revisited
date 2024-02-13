@@ -5,22 +5,25 @@ import { BsMusicPlayerFill } from "react-icons/bs";
 import SpotifyNowPlayingWidget from '../components/SpotifyWidget/SpotifyWidget';
 import styles from '../styles/scss/Home.module.scss'; // Use import and assign to a variable
 import sharedStyles from '../styles/scss/Shared.module.scss'; // Use import and assign to a variable
+import { ArtImageData } from './api/getRandomArtwork';
+import { fetchRandomArtwork } from '../helpers/interactions';
 
 export default function Home() {
   const [spotifyData, setSpotifyData] = useState(null);
+  const [randomArtImg, setRandomArtImg] = useState<ArtImageData | null>(null);
 
   useEffect(() => {
     // Fetch data when the component mounts
-    fetchData();
-
+    fetchSongData();
+    fetchRandomArtwork(setRandomArtImg);
     // Fetch data every 1 minute (60,000 milliseconds)
-    const intervalId = setInterval(fetchData, 60000);
+    const intervalId = setInterval(fetchSongData, 60000);
 
     // Cleanup the interval when the component is unmounted
     return () => clearInterval(intervalId);
   }, []); 
 
-  const fetchData = async () => {
+  const fetchSongData = async () => {
     try {
       const response = await fetch('https://spotify-portfolio-widget.herokuapp.com/currently-playing');
       if (response.ok) {
@@ -65,10 +68,10 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <div className={`${styles['side-accent']} ${sharedStyles['art-div-1']}`}>
-        <img src="img/artworks/Hagihara_4.jpg" />
-        <span className={sharedStyles['art-caption']}>萩原 卓哉 (Hagihara Takuya)</span> {/* Use the imported styles variable */}
-      </div>
+      {randomArtImg && <div className={`${styles['side-accent']} ${sharedStyles['art-div-1']}`} style={{ cursor: 'pointer' }} onClick={() => fetchRandomArtwork(setRandomArtImg)}>
+        <img src={randomArtImg.path} />
+        <span className={sharedStyles['art-caption']}>{randomArtImg.fileName}</span> 
+      </div>}
     </>
   );
 }

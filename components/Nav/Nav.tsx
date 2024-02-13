@@ -16,32 +16,32 @@ const Nav: React.FC = () => {
             <Link href="/">
               <div className={styles['icon']}>
                 <VscRootFolder className={styles['nav-icon']}/>
-                <span className={styles['nav-caption']}>./</span>
               </div>
+              <span className={styles['nav-caption']}>./</span>
             </Link>
         </li>
         <li>
           <Link href="/projects">
             <div className={styles['icon']}>
               <MdContentCopy className={styles['nav-icon']}/>
-              <span className={styles['nav-caption']}>./<span className={styles.projects}>projects</span></span>
             </div>
+            <span className={styles['nav-caption']}>./<span className={styles.projects}>projects</span></span>
           </Link>
         </li>
         <li>
           <Link href="/bio">
             <div className={styles['icon']}>
               <MdNotes className={styles['nav-icon']}/>
-              <span className={styles['nav-caption']}>./<span className={styles.bio}>about</span></span>
             </div>
+            <span className={styles['nav-caption']}>./<span className={styles.bio}>about</span></span>
           </Link>
         </li>
         <li>
           <Link href="/media">
             <div className={styles['icon']}>
               <CiMusicNote1 className={styles['nav-icon']}/>
-              <span className={styles['nav-caption']}>./<span className={styles.media}>media</span></span>
             </div>
+            <span className={styles['nav-caption']}>./<span className={styles.media}>media</span></span>
           </Link>
         </li>
             </ul>

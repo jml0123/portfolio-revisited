@@ -8,7 +8,7 @@ import { mixEmbedData, productionEmbedData } from './data/media.data';
 export default function MediaPage() {
 
   return (
-    <main>
+    <main className={styles.beyond}>
       <header aria-label="content-header">
         <div className={sharedStyles['content-heading-wrapper']}>
           <h1 className={`${sharedStyles['content-heading']} ${sharedStyles['content-heading--media']}`}>Media</h1>
@@ -21,6 +21,7 @@ export default function MediaPage() {
         <div className={styles['media-container']}>
             <div className={styles['media-group-wrapper']}>
         <div className={styles['media-heading-wrapper']}>
+             {/*<div className={styles['media-heading-line--before']}>kamusta?</div>*/}
             <h1 className={styles['media-heading']}>MIX</h1>
             <div className={styles['media-heading-line']}>radio and live DJ sets</div>
         </div>
@@ -31,8 +32,9 @@ export default function MediaPage() {
            <div className={styles['media-group-wrapper']}>
 
           <div className={styles['media-heading-wrapper']}>
+            {/*<div className={styles['media-heading-line--before']}>kamusta?</div>*/}
             <h1 className={styles['media-heading']}>PRODUCTION</h1>
-            <div className={styles['media-heading-line']}>production work + sound design</div>
+            <div className={styles['media-heading-line']}>production/composition work + sound design</div>
             </div>
            {productionEmbedData.map(d => <Embed embedData={d}/>)}
            </div>

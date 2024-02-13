@@ -192,7 +192,7 @@
     a {
         text-decoration: none;
     }
-    .live, .repo {
+    .live, .repo, .preview {
         margin: 0 10%;
         &:hover {
             color: white;
@@ -201,8 +201,8 @@
     }
     &--grid {
         width: 85%;
-        .live, .repo {
-            width: 40px;
+        .live, .repo, .preview {
+            width: 80px;
             font-size: 90%;
             transition: 70ms linear;
             color: lightblue;
@@ -221,14 +221,14 @@
     }
     &--slide {
         width: 100%;
-        .live, .repo {
+        .live, .repo, .preview {
             color: white;
         }
     }
     &--contact {
         padding: $paddingDefault;
         font-size: 88%;
-        .live, .repo {
+        .live, .repo, .preview {
             font-family: $fontPrimary;
             font-weight: bold;
             color: black;
@@ -272,15 +272,6 @@
         max-height: 800px;
         min-width: 100%;
         margin: 0 auto;
-
-        &--10 {grid-area: span 2 / span 1; }
-        &--9  {grid-area: span 2 / span 2; }
-        &--8  {grid-area: span 2 / span 1; }
-        &--7  {grid-area: span 2 / span 2; }
-        &--6  {grid-area: span 2 / span 1; }
-        &--5  {grid-area: span 2 / span 2; }
-        &--4  {grid-area: span 2 / span 1; }
-        &--3  {grid-area: span 2 / span 2; }
         &--2  {grid-area: span 2 / span 1; }
         &--1  {grid-area: span 2 / span 2; }
 

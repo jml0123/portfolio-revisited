@@ -62,6 +62,10 @@ $subtleTextPadding: 15px;
 
 /* COLORS */
 // Interaction
+$orb-color0: #adc7fa; 
+$orb-color1: #9c7bf5d7; 
+$orb-color2: #eef4a4; 
+$orb-color3: #84de68;
 
 
 // Background
@@ -75,6 +79,7 @@ $slideColor1: #3a3a3a;
 $slideColor2: linear-gradient(0.25turn, #BC0100, #90B2E6);
 $slideColor3: rgb(238, 226, 121);
 $slideColor4: #445adb;
+$radialGradientBg: radial-gradient(circle, $orb-color3 13%, $defaultBg 48%) 0 0 no-repeat;
 
 // Filters
 $contentDropShadowDefault: drop-shadow(-5px -2.5px 12px rgba(0, 0, 0, 0.25));
@@ -82,14 +87,15 @@ $contentDropShadowLighter: drop-shadow(-5px -2.5px 12px rgba(154, 154, 154, 0.13
 $mixBlend1: exclusion;
 
 // Text
-$headerColorAccent1: rgba(42, 42, 42, 0.651);
-$headerColorAccent2: rgba(240,177,9,0.66);
-$headerColorAccent3: rgba(14,104,152, 0.66);
+$headerColor: rgba(42, 42, 42, 0.651);
+$headerColorAccent1: rgba(230, 122, 236, 0.66);
+$headerColorAccent2: rgba(142, 130, 236, 0.66);
+$headerColorAccent3: rgba(21, 216, 141, 0.66);
 $bodyTextColor: #2b2b2b;
 $subtleBlack: rgba(12, 12, 12, 0.88);
 $linksColor: #0186FF;
-$headerColor: $bodyTextColor;
 $textHoverColor: rgba(42, 42, 42, 0.651);
+$colorSubtleLightGrey: #aaaaaa;
 
 
 /* BREAKPOINTS */
@@ -101,3 +107,17 @@ $btnBorderRadius: 120px;
 
 /* GENERAL */
 $offset: 1.366px;
+
+
+// Mixin to create circular gradient
+@mixin circular-gradient($color, $size: 100%) {
+    background: radial-gradient(circle, $color 0%, $defaultBg $size);
+  }
+
+
+@mixin radialGradientBackground($orb-color, $defaultBg) {
+  $radialGradientBg: radial-gradient(circle, $orb-color 13%, $defaultBg 48%) 0 0 no-repeat;
+  background: $radialGradientBg;
+  background-attachment: fixed;
+}
+
