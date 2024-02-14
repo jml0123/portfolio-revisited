@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { fetchRandomArtwork } from '../helpers/interactions';
-import styles from '../styles/scss/bio.module.scss'; 
+import styles from '../styles/scss/Bio.module.scss'; 
 import sharedStyles from '../styles/scss/Shared.module.scss'; 
 import { ArtImageData } from './api/getRandomArtwork';
 
