@@ -44,7 +44,7 @@ export default function BioPage() {
                   and worked as a part-time artist manager. After a scheduling mixup in college, I needed to take an extra class to fulfill my credits.
                   Out of curiosity, I took an intro to web programming course and have never looked back since.
                   <br/> <br/>
-                  <i>Currently, I wear multiple hats as a backend developer at Cadoo (a fitness gaming startup funded by OpenAI's founder) and contribute my skills as a software developer to various other companies.
+                  <i>Currently, I wear multiple hats as a backend developer at Cadoo (a fitness gaming startup funded by OpenAI's co-founder) and contribute my skills as a software developer to various other companies.
                   </i>            
                   </p>
             <div className={styles['interests']}>
@@ -52,7 +52,7 @@ export default function BioPage() {
                         <span role="img" aria-label="interests">🌀</span>
                         </h1>
                         <ul>
-                            <li>Cooking new recipes / eating out</li>
+                            <li>Cooking new recipes / trying new foods</li>
                             <li>Going to live events & venues</li>
                             <li>Museums, art and design</li>
                         </ul>
