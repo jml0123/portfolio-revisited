@@ -1,4 +1,4 @@
-import { EmbedData, EmbedType } from "../../components/Media/Media.types";
+import { EmbedData, EmbedType } from "../components/Media/Media.types";
 
 export const productionEmbedData: EmbedData[] = [
     {

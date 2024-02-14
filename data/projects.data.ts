@@ -1,4 +1,4 @@
-import { GridItemData } from "../../components/Grid/Grid.types";
+import { GridItemData } from "../components/Grid/Grid.types";
 
 export const priorityTechList = [
   "Node.js",

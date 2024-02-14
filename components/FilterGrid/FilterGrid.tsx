@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from '../../styles/scss/FilterGrid.module.scss';
 import { GridItemData } from '../Grid/Grid.types';
 import { Grid } from '../Grid/Grid'; // Import your existing Grid and GridItem components
-import { priorityTechList } from '../../pages/data/projects.data';
+import { priorityTechList } from '../../data/projects.data';
 
 interface FilterableGridProps {
   items: GridItemData[];

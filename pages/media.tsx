@@ -3,7 +3,7 @@ import Embed from '../components/Media/Embed';
 import { EmbedData, EmbedType } from '../components/Media/Media.types';
 import styles from '../styles/scss/Media.module.scss'; 
 import sharedStyles from '../styles/scss/Shared.module.scss'; 
-import { mixEmbedData, productionEmbedData } from './data/media.data';
+import { mixEmbedData, productionEmbedData } from '../data/media.data';
 
 export default function MediaPage() {
 

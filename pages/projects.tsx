@@ -1,4 +1,4 @@
-import { projectsGridData } from './data/projects.data';
+import { projectsGridData } from '../data/projects.data';
 
 import styles from '../styles/scss/Projects.module.scss'; 
 import sharedStyles from '../styles/scss/Shared.module.scss'; 
