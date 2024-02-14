@@ -12,7 +12,7 @@ export const priorityTechList = [
 export const projectsGridData: GridItemData[] = [
         {
           title: "Memory Dealer (XR)",
-          description: "You lost your memories, and now have to reclaim them through a series of undeveloped photographs, using speech-to-text in VR.",
+          description: "You lost your memories, and now have to reclaim them through a series of undeveloped photographs, using speech-to-text + image generation in VR.",
           tech: ["Unity", "XR", "VR", "C#", "OpenAI API", "Dall-E"],
           imageUrl: "img/projects/MemoryDealer.png",
           previewUrl: "https://drive.google.com/file/d/1B4159wrBtQLd98zH0x26eb6uGAqcCes2/view?usp=sharing",
@@ -31,6 +31,14 @@ export const projectsGridData: GridItemData[] = [
         description: "A music concept for a new world of mixed reality, featuring metadata displayed in 3d space, and personalized visuals based on the song",
         tech: ["Unity", "XR", "AR", "C#", "Spotify API"],
         imageUrl: "img/projects/AudioHijack.png",
+        repoUrl: "https://github.com/XRBootcamp/MVP_6C_Are_You_Here",
+      },
+      {
+        title: "Are You Here (XR)",
+        description: "",
+        tech: ["Unity", "XR", "VR", "C#", "OpenAI API", "Dall-E"],
+        imageUrl: "",
+        previewUrl: "",
         repoUrl: "https://github.com/XRBootcamp/MVP_6C_Are_You_Here",
       },
       {
@@ -63,8 +71,8 @@ export const projectsGridData: GridItemData[] = [
     },
     {
       title: "Cadoo Shareables",
-      description: "I made a video processing microservice in C# and Unity to enhance the AI-verified workout expeirence by adding visual feedback to your reps.",
-      tech: ["Unity", "Node.js", "C#", "bash", "ffmpeg"],
+      description: "I created a video processing microservice running on a Linux VM using C#, Bash, and Unity to enhance the AI-verified workout experience by adding visual feedback to your reps.",
+      tech: ["Unity", "Node.js", "C#", "Bash", "ffmpeg"],
       imageUrl: "img/projects/shareables_demo.gif",
       liveUrl: "https://cadoo.io",
     },

@@ -5,46 +5,23 @@ $fontMonoSourceCode: "Source Code Pro", monospace;
 
 
 /* DEVELOPMENT FONTS */
-$fontDisplayAukera: "Aukera-Display", serif;
-$fontDisplayBarstukai: "BARSTUKAI-Display", serif;
-$fontDisplayLaBorisette: "LaBorisette-Display", serif;
-$fontDisplayAusrine: "AUSRINE-Display", serif;
-$fontDisplayTiltortion: "Tiltortion-Display", serif;
-$fontDisplayLithops: "Lithops-Display", serif;
-$fontDisplaySlinkee: "Slinkee-Display", serif;
-$fontDisplayHeritage: "Heritage-Display", serif;
-$fontDisplayKupole: "KUPOLE-Display", serif;
 $fontDisplayFromages: "Fromages-Display", serif;
 $fontDisplayCrozet: "Crozet-Display", serif;
 $fontDisplayFlowState: "Flowstate-Display", serif;
-$fontSansAmiamieRegular: "Amiamie-SansSerif", sans-serif;
-$fontSansAmiamieLight: "Amiamie-Light-SansSerif", sans-serif;
-$fontSansAmiamieRound: "Amiamie-Round-SansSerif", sans-serif;
 $fontSansGeistBold: "Geist-Bold-SansSerif", sans-serif;
 $fontSansGeist: "Geist-SansSerif", sans-serif;
 $fontSansGeistLight: "Geist-Light-SansSerif", sans-serif;
-$fontMonoBasier: "Basier-Mono", monospace;
-$fontMonoCommitVariable: "Commit-Variable-Mono", monospace;
 $fontMonoGeistMed: "Geist-Medium-Mono", monospace;
-$fontMonoGeistBlack: "Geist-Black-Mono", monospace;
 $fontMonoGeistSemibold: "Geist-Semibold-Mono", monospace;
 $fontMonoGeistLight: "Geist-Light-Mono", monospace;
-$fontMonoGeistRegular: "Geist-Regular-Mono", monospace;
 $fontMonoGeistVariable: "Geist-Variable-Mono", monospace;
-$fontMonoNecto: "Necto-Mono", monospace;
-$fontMonoSilka: "Silka-Mono", monospace;
 
 
 /* FONTS */ 
-// $fontPrimary: $fontSansAssistant;
 $fontPrimary: $fontSansGeist;
 $fontPrimaryBold: $fontSansGeistBold;
-// $fontSecondary: $fontSansRoboto;
 $fontSecondary: $fontSansGeistLight;
-// $fontHeaders: $fontMonoSourceCode;
-// $fontHeaders: $fontMonoGeistVariable;
 $fontHeaders: $fontMonoGeistLight;
-// $fontHeaders: $fontMonoCommitVariable;
 $fontNav: $fontHeaders;
 $fontSmallAccent: $fontDisplayFlowState;
 

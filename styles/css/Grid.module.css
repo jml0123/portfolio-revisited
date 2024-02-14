@@ -455,6 +455,8 @@
   .label-tech {
     font-size: 12px;
     border-radius: 4.33px;
+    white-space: normal;
+    margin-right: 8px !important;
   }
   .blank-work {
     border: 2px dashed grey;

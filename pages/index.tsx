@@ -47,7 +47,7 @@ export default function Home() {
           <div className={styles['intro-content-wrapper']}> 
           <div className={styles['intro-content-wrapper--main']}>
              {/* TODO: Make the below animated with different titles */}
-            <div className={styles['title-bar']}>welcome -</div> 
+            <div className={styles['title-bar']}>kamusta?</div> 
             <div className={styles['socials-wrapper']}>
               <a href="mailto:jsmglorenzo@gmail.com" target="_blank"><SiMinutemailer size={ctaIconSize}/></a>
               <a href="https://www.linkedin.com/in/jml123" target="_blank"><SiLinkedin size={ctaIconSize}/></a>
@@ -59,7 +59,7 @@ export default function Home() {
             <h1><span className={styles['name-span']}>
                         {'>'} i'm miguel_</span> a software eng,
                         <span className={styles['intro-content-2']}> creative technologist, and dj in Brooklyn.  
-                       As a developer, I strive to implement innovative ideas with meticulous detail and clarity. As a creative, I capture sentiments and envision + build new possibilities.
+                       As a developer, I strive to implement innovative ideas with meticulous detail and clarity. As a creative, I channel sentiments and envision + build new environments and possibilities.
                         </span></h1>
             </div>
             <div className={styles['spotify-widget-wrapper']}>

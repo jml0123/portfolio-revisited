@@ -305,6 +305,7 @@
   font-size: 43px;
   font-family: "Flowstate-Display", serif;
   mix-blend-mode: exclusion;
+  color: rgba(42, 42, 42, 0.651);
 }
 
 .intro-content-wrapper--main {
