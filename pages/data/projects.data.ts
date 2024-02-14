@@ -63,9 +63,9 @@ export const projectsGridData: GridItemData[] = [
     },
     {
       title: "Cadoo Shareables",
-      description: "Fitness Gaming",
-      tech: ["Unity", "C#", "bash", "ffmpeg"],
-      imageUrl: "",
+      description: "I made a video processing microservice in C# and Unity to enhance the AI-verified workout expeirence by adding visual feedback to your reps.",
+      tech: ["Unity", "Node.js", "C#", "bash", "ffmpeg"],
+      imageUrl: "img/projects/shareables_demo.gif",
       liveUrl: "https://cadoo.io",
     },
     {
@@ -78,11 +78,11 @@ export const projectsGridData: GridItemData[] = [
       title: "Bubbl",
       description: "I helped Bubbl build their web-based ticketing and event flow using Next.js, Tailwind, and Lambda functions",
       tech: ["Next.js", "React.js", "TypeScript", "AWS Lambda", "Consulting", "Tailwind.css"],
-      imageUrl: "",
+      imageUrl: "img/projects/bubbl.jpg",
     },
     {
       title: "Liquidity.so",
-      description: "I worked as a contractor for a pre-seed startup that aggregates crypto price data across many exchanges",
+      description: "I helped liquidity.so, a pre-seed startup that aggregates crypto price data across many exchanges, build their MVP by porting a webflow prototype into a React application",
       tech: ["React.js", "Webflow", "Consulting"],
       imageUrl: "img/projects/liquidity.png",
       previewUrl: "https://www.producthunt.com/products/liquidity-so",
@@ -149,13 +149,13 @@ export const projectsGridData: GridItemData[] = [
       },
       {
         title: "Recombinators.com",
-        description: "I worked as a management consultant for Recombinators, and also built their landing page using Webflow with Google Maps API integration",
+        description: "I was a consultant for Recombinators, a boutique strategy firm, and also built their landing page using Webflow with Google Maps API integration",
         tech: ["Webflow", "JavaScript", "Consulting"],
         imageUrl: "img/projects/recombinators1-min.png",
       },
       {
         title: "Portfolio Site (this website)",
-        description: "This very website was ported from it's original HTML/SCSS/JS site using Next.js and TypeScript",
+        description: "This website was ported from it's original HTML/SCSS/JS site using Next.js and TypeScript",
         tech: ["Next.js", "React.js", "Spotify API", "SCSS", "TypeScript"],
         imageUrl: "img/projects/portfolio.png",
         liveUrl: "https://miguel-lorenzo.dev",

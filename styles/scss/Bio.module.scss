@@ -82,11 +82,11 @@
     padding: 7%;
     margin-left: -8vw;
     object-fit: cover;
-    border-radius: 10px; 
+    // border-radius: 10px; 
+    border-radius: 76% 24% 34% 66% / 59% 58% 42% 41%;
     position: absolute;
-    width: 62vw;
-    max-width: 888px;
-    min-width: 420px;
+    width: 36vw;
+    max-width: 800px;
     filter: $contentDropShadowLighter;
     &-wrapper {
         min-width: 60%;
