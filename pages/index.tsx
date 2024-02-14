@@ -47,7 +47,7 @@ export default function Home() {
           <div className={styles['intro-content-wrapper']}> 
           <div className={styles['intro-content-wrapper--main']}>
              {/* TODO: Make the below animated with different titles */}
-            <div className={styles['title-bar']}>kamusta?</div> 
+            <div className={styles['title-bar']}>welcome</div> 
             <div className={styles['socials-wrapper']}>
               <a href="mailto:jsmglorenzo@gmail.com" target="_blank"><SiMinutemailer size={ctaIconSize}/></a>
               <a href="https://www.linkedin.com/in/jml123" target="_blank"><SiLinkedin size={ctaIconSize}/></a>
