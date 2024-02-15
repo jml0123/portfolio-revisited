@@ -22,7 +22,6 @@
   display: flex;
   gap: 10px;
   margin-bottom: 10px;
-  max-width: 66%;
   flex-wrap: wrap;
 }
 
@@ -52,6 +51,11 @@
     padding: 22px;
     min-height: 100%;
     flex: 1 0;
+  }
+}
+@media (min-width: 1024px) {
+  .filter-list {
+    max-width: 66%;
   }
 }
 

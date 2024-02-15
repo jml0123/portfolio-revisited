@@ -17,7 +17,6 @@
     display: flex;
     gap: 10px;
     margin-bottom: 10px;
-    max-width: 66%;
     flex-wrap: wrap;
   }
   
@@ -55,4 +54,10 @@
         
     }
     
+}
+
+@media (min-width: $lgBreakPoint) {
+  .filter-list {
+    max-width: 66%;
+  }
 }
