@@ -1,0 +1,69 @@
+/* DISPLAY FONTS */
+
+  @font-face {
+    font-family: 'Fromages-Display';
+    src: url('/fonts/4-Fromages-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Crozet-Display';
+    src: url('/fonts/Crozet-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Flowstate-Display';
+    src: url('/fonts/flowstate.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* SANS-SERIF FONTS */
+  @font-face {
+    font-family: 'Geist-SansSerif';
+    src: url('/fonts/Geist/Geist-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Geist-Bold-SansSerif';
+    src: url('/fonts/Geist/Geist-Black.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  @font-face {
+    font-family: 'Geist-Light-SansSerif';
+    src: url('/fonts/Geist/Geist-Light.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* MONOSPACE FONTS */
+
+// Try 375, 400, 575, 625
+  @font-face {
+    font-family: 'Geist-Medium-Mono';
+    src: url('/fonts/Geist.Mono/GeistMono-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Geist-Light-Mono';
+    src: url('/fonts/Geist.Mono/GeistMono-Light.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Geist-Variable-Mono';
+    src: url('/fonts/Geist.Mono/GeistMonoVariableVF.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }

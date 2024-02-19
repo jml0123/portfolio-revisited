@@ -1,87 +1,89 @@
-export default function Bio() {
-    return (
-      <body>
-        <main>
-          <header aria-label="content-header">
-            <div className="content-heading-wrapper">
-              <h1 className="content-heading content-heading--bio">Bio</h1>
-              <div className="content-subheading-wrapper">
-                <h2 className="content-subheading">Beyond the code</h2>
-              </div>
-            </div>
-          </header>
-          <section role="region" aria-label="content">
-            <div className="globe-wrapper">
-              <img className="globe" src="img/blocks.gif" alt="Gradient Gif" />
-            </div>
-          </section>
-          <section role="region" aria-label="content-2" className="bio">
-            <div className="bio-container">
-              <div className="bio-container--image art-div2">
-                <img src="img/artworks/hagihara_1.jpeg" alt="Bio Profile" />
-                <span className="art-caption">by 萩原 卓哉 (Hagihara Takuya)</span>
-              </div>
-              <div className="bio-wrapper">
-                <p>
-                  I’m a Brooklyn-based fullstack developer who loves to bring ideas to life on the web. 
-                  With a weird mix of experiences in corporate strategy, project and artist management, 
-                  my background has enabled me to take on a macro and micro perspective to building
-                  software.
+
+import { useState, useEffect } from 'react';
+import { fetchRandomArtwork } from '../helpers/interactions';
+import styles from '../styles/scss/Bio.module.scss'; 
+import sharedStyles from '../styles/scss/Shared.module.scss'; 
+import { ArtImageData } from './api/getRandomArtwork';
+
+export default function BioPage() {
+
+  const [randomArtImg, setRandomArtImg] = useState<ArtImageData | null>(null);
+
+  useEffect(() => {
+    fetchRandomArtwork(setRandomArtImg);
+  }, []); 
+  return (
+    <main className={styles.about}>
+      <header aria-label="content-header">
+        <div className={sharedStyles['content-heading-wrapper']}>
+          <h1 className={`${sharedStyles['content-heading']} ${sharedStyles['content-heading--bio']}`}>about</h1>
+          <div className={sharedStyles['content-subheading-wrapper']}>
+            <h2 className={sharedStyles['content-subheading']}>Things I've been up to</h2>
+          </div>
+        </div>
+      </header>
+      <section role="region" aria-label="content">
+        <div className={styles['focus-img-wrapper']}>
+          <img className={styles['focus-img']} src="img/misc/self_p.jpg" alt="(Me)" />
+        </div>
+      </section>
+      <section role="region" aria-label="content-2" className={styles['bio']}>
+        <div className={styles['bio-container']}>
+          <div className={`${styles['bio-container--image']} ${styles['art-div2']}`} style={{ cursor: 'pointer' }} onClick={() => fetchRandomArtwork(setRandomArtImg)}>
+            <img src={randomArtImg?.path} alt="Bio Profile" />
+            <span className={styles['art-caption']}>{randomArtImg?.fileName}</span>
+          </div>
+          <div className={styles['bio-wrapper']}>
+            <p>
+            I’m a Brooklyn-based software engineer, XR, and creative developer who loves to build new ideas to life. 
+                  With a diverse mix of experiences in engineering, corporate strategy and artist management, 
+                  my background has enabled me to practice engineering as a more a holistic process.
                   <br /><br />
-                  I immigrated from the Philippines in 2007 and went to NYU for my undergrad (B.A. 2019). While in school, I was heavily involved in the music scene
+                  I immigrated from the Philippines in 2007 and went to NYU for my undergrad While in school, I was heavily involved in the music scene
                   and worked as a part-time artist manager. After a scheduling mixup in college, I needed to take an extra class to fulfill my credits.
                   Out of curiosity, I took an intro to web programming course and have never looked back since.
-                </p>
-                <div className="interests">
-                        <h1>Interests
-                            <span role="img" aria-label="interests">🌀</span>
+                  <br/> <br/>
+                  <i>Currently, I wear multiple hats as a backend developer at Cadoo (a fitness gaming startup funded by OpenAI's co-founder) and contribute my skills as a software developer to various other companies.
+                  </i>            
+                  </p>
+            <div className={styles['interests']}>
+              <h1>Interests
+                        <span role="img" aria-label="interests">🌀</span>
                         </h1>
                         <ul>
-                            <li>Cooking new recipes / eating out</li>
-                            <li>Music production/audio engineering / synthesizers</li>
-                            <li>Visiting art museums</li>
+                            <li>Cooking new recipes / trying new foods</li>
+                            <li>Going to live events & venues</li>
+                            <li>Appreciating art and design</li>
                         </ul>
-                        <h1>Books (Currently reading)
+                        <h1>Books (Favorites & Currently reading)
                             <span role="img" aria-label="books">📚</span>
                         </h1>
                         <ul>
-                            <li>Ocean of Sound by David Toop</li>
-                            <li>Waystations of the Deep Night by Marcel Brion</li>
-                            <li>The Pragmatic Programmer by David Thomas & Andrew Hunt 
-                                <span className="label label-progress">
-                                In Progress</span></li>
-                            <li>Design of Everyday Things by Don Norman  
-                                <span className="label label-progress">
-                                In Progress</span></li>
-                            <li>Thought Forms by A. Besant, C. W. Leadbeater <span className="label label-progress">
-                                In Progress</span></li>
-                        </ul>
-                        <h1>Music
-                            <span role="img" aria-label="music">〰️</span>
-                        </h1>
-                        <ul>
-                            <li>90-00's Chicago Deep House</li>
-                            <li>Early-Mid 00's dubstep</li>
-                            <li>DnB / Jungle</li>
-                            <li>Modal jazz / post bop</li>
-                            <li>Piero Umiliani / old film scores</li>
-                            <li>'IDM' (Aphex Twin / Squarepusher, etc.)</li>
-                            <li>Some favorite producers: Madlib, The Alchemist, Knxwledge</li>
-                            <li>Dub Music</li>
-                            <li>Ambient / ambient techno</li>
-                            <li><i>Too many - here's my
-                                <a href="https://open.spotify.com/user/jmlorenzo96?si=GQ1JagBxS4K0-6bU5VGlXw" target="_blank">Spotify</a>
-                                and 
-                                <a href="https://www.discogs.com/user/jsmglorenzo/collection" target="_blank"
-                                >record collection!</a>
-                            </i></li>
+                          <li>
+                            The Pragmatic Programmer by David Thomas & Andrew Hunt
+                          </li>
+                          <li>Mutual Aid by Dean Spade
+                            <span className={`${styles['label']} ${styles['label-progress']}`}>
+                              In Progress
+                            </span>
+                          </li>
+                          <li>
+                            Left Hand of Darkness by Ursula K. Le Guin
+                            <span className={`${styles['label']} ${styles['label-progress']}`}>
+                              In Progress
+                            </span>
+                          </li>
+                          <li>
+                            The Will to Change by bell hooks
+                            <span className={`${styles['label']} ${styles['label-progress']}`}>
+                              In Progress
+                            </span>
+                          </li>
                         </ul>
                     </div> 
-              </div>
+                  </div>
             </div>
-          </section>
-        </main>
-      </body>
-    );
-  }
-  
+      </section>
+    </main>
+  );
+};

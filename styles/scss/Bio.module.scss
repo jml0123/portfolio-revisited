@@ -1,0 +1,140 @@
+@import '../variables/global.variables.scss'; 
+@import '../animations/global.animations.scss'; 
+
+.bio-container--image {
+    animation: fadeIn 0.55s;
+    animation-iteration-count: 1;
+  }
+
+.about {
+    @include radialGradientBackground($orb-color3, $defaultBg);
+}
+
+.label {
+    margin: 0 0.4em;
+    padding: 0.2em 0.4em;
+    border-radius: 5px;
+    white-space: nowrap;
+    &-progress{
+        font-size: 13px;
+        background: #C2E0C6;
+        &::after{
+            content: " ♨️"
+        }
+    }
+    &-tech{
+        font-size: calc(8.75px + 6 * ((100vw - 320px) / 680));
+        white-space: initial;
+        margin: 0;
+        color: black;
+        background: $defaultBg
+    }
+}
+
+
+.bio {
+    width: 100vw;
+    &-container {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        padding: $paddingDefault; 
+       
+        
+        &--image {
+            min-width: 150px;
+            width: 53%;
+            max-width: 190px;
+            margin: 0 auto;
+            img {
+                //border-radius: 100%;
+                max-width: 100%;
+                //border: 2px solid  #0f0f0f;
+                -webkit-filter: drop-shadow(5px 5px 5px #e6e6e6);
+               
+            }    
+        }
+    }
+    &-wrapper {
+        margin: 0.75% auto;
+        p {
+            color: $bodyTextColor;
+            font-family: $fontSecondary;
+            letter-spacing: 0.025em;
+            width: 88%;  
+            max-width: 1650px;
+            font-size: 120%;
+        }
+    }
+}
+
+.interests{
+    a {
+        color: $linksColor;
+    }
+    ul {
+        line-height: 1.5em;
+    }
+}
+
+.focus-img {
+    display: none;
+    padding: 7%;
+    margin-left: -8vw;
+    object-fit: cover;
+    // border-radius: 10px; 
+    border-radius: 76% 24% 34% 66% / 59% 58% 42% 41%;
+    position: absolute;
+    width: 36vw;
+    max-width: 800px;
+    filter: $contentDropShadowLighter;
+    &-wrapper {
+        min-width: 60%;
+        max-width: 60%;
+        position: fixed;
+        min-height: 100vh;
+        max-height: 100vh;
+        opacity: 0.66;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+  
+        //overflow: hidden;
+    }
+}
+
+@media (min-width: $lgBreakPoint) {
+    .bio {
+    
+        > div { 
+            margin-top: 7vh;
+            // position: absolute;
+        }
+    }
+    .bio {
+        //height: 100%;
+        &-container { 
+            &--image {
+                margin: 0;
+                border: 0;
+                padding: 0;
+                border: 0;
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+        &-wrapper {
+            p {
+                font-size: 120%;
+                line-height: $contentLineHeight;
+                width: 33%;  
+            }
+        }
+    }
+    .focus-img {
+        display: block;
+        opacity: 0.88;
+    }
+}

@@ -1,0 +1,63 @@
+@import '../variables/global.variables.scss'; 
+
+.filter-grid-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 2% auto 2.5vh auto;
+    min-width: 100%;
+    overflow: auto;
+    max-height: none;
+    // outline: 1px solid red;
+    width: 100%;
+}
+
+.filter-list {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .filter-word {
+    font-size: 14px;
+    margin: 0 0.33em;
+    padding: 0.2em 0.7em;
+    border-radius: 10px;
+    white-space: nowrap;
+    font-family: $fontHeaders;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: rgb(238, 233, 233);
+    &-active {
+        background-color: #afafaf;;
+    }
+  
+    &:hover {
+      background-color: #afafaf;
+    }
+  }
+
+  @media (min-width: $lgBreakPoint) {
+
+
+    .filter-grid-wrapper {
+        // outline: 1px solid red;
+        width: 100%;
+        margin: 2% auto;
+        max-width: 33%;
+        padding: $paddingDefault;
+        min-height: 100%;
+        // outline: 1px solid red;
+        flex: 1 0;
+        
+    }
+    
+}
+
+@media (min-width: $lgBreakPoint) {
+  .filter-list {
+    max-width: 66%;
+  }
+}

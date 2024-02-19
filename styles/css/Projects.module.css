@@ -1,0 +1,227 @@
+/* LEGACY FONTS */
+/* DEVELOPMENT FONTS */
+/* FONTS */
+/* PADDING */
+/* COLORS */
+/* BREAKPOINTS */
+/* COMPONENTS */
+/* GENERAL */
+@keyframes fadeInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(-18px);
+  }
+  60% {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.spin-right {
+  animation: spin 6666ms linear infinite;
+}
+
+.rotate-z {
+  animation: rotateZ 10000ms linear infinite;
+}
+
+@-ms-keyframes spin {
+  from {
+    -ms-transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(110%);
+    opacity: 1;
+  }
+  90% {
+    transform: translateX(-105%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-130%);
+    opacity: 0;
+  }
+}
+@keyframes spring {
+  0% {
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+  33% {
+    opacity: 30%;
+  }
+  66% {
+    opacity: 60%;
+  }
+  99% {
+    opacity: 90%;
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes slide {
+  0% {
+    transform: translateX(-20%) scale(0.88);
+    opacity: 0;
+  }
+  66% {
+    transform: translateX(0) scale(0.88);
+    opacity: 50%;
+  }
+  100% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+@keyframes bubbles {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  22% {
+    background: rgba(0, 0, 255, 0.01);
+  }
+  100% {
+    background: rgb(0, 255, 0);
+    transform: translateY(-120vh) scale(0.44);
+    opacity: 0.95;
+  }
+}
+@keyframes bgFlicker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes rotateZ {
+  from {
+    -ms-transform: rotateZ(0deg);
+  }
+  to {
+    -ms-transform: rotateZ(360deg);
+  }
+}
+@-moz-keyframes rotateZ {
+  from {
+    -moz-transform: rotateZ(0deg);
+  }
+  to {
+    -moz-transform: rotateZ(360deg);
+  }
+}
+@-webkit-keyframes rotateZ {
+  from {
+    -webkit-transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+  }
+}
+@keyframes rotateZ {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  60% {
+    opacity: 0;
+    transform: translateX(7px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes wavy {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -15px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+.works {
+  overflow: auto;
+  max-height: none;
+}
+
+.projects {
+  width: auto;
+  flex: 1;
+}
+
+.building {
+  background: radial-gradient(circle, #ef9a5e 13%, #FFFCF9 48%) 0 0 no-repeat;
+  background-attachment: fixed;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*# sourceMappingURL=Projects.module.css.map */

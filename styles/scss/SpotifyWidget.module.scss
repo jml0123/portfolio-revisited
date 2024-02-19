@@ -1,0 +1,105 @@
+@import '../variables/global.variables.scss'; 
+@import '../animations/global.animations.scss'; 
+
+
+.fade-in {
+    animation: fadeIn 0.416s;
+}
+.fade-out {
+    animation: fadeOut 0.88s;
+}
+.spotify-now-playing-widget {
+    border-radius: 2px;
+    transform: translateZ(0);
+    height: auto;
+    max-height: 100px;
+    max-width: 500px;
+    min-height: 20px;
+    font-size: calc(10px + 6 * ((100vw - 320px) / 700));
+
+    a {
+        color: inherit;
+        text-decoration: none;
+        align-items: start;
+        flex-wrap: nowrap;
+        justify-content: start;
+        display: flex;
+    }
+    .badge {
+        padding: 1px 0 0 0;
+        margin: 0;
+        overflow-x: hidden;
+        transform: translateZ(0);
+        border-radius:  2px;
+        white-space: nowrap;
+
+    }
+    .badge-details {
+        // background: $slideColor2;
+        transform: translateZ(0);
+        margin: 1.5em 0 0 0;
+        border-radius: 2px;
+        animation-name: scroll;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+        transform-origin: right;
+        animation-timing-function: linear;
+
+    }
+    .track-info {
+        font-family: $fontSmallAccent;
+        font-size: smaller;
+        color: $textHoverColor;
+    }
+    .now-playing  {
+        font-size: smaller;
+        font-family: $fontSmallAccent;
+        color: $textHoverColor;
+    }
+    .album-art {
+        margin: 0 1em 0 0;
+        display: inline-block;
+        padding: 0;
+        // border-radius: 100%;
+        width: 69.66px; 
+        height: 69.66px;
+        box-shadow: -1.33px 3.33px 6px rgba(0, 0, 0, 0.16); /* Add a subtle drop shadow */
+    }
+    &:hover .now-playing {
+        color: $linksColor
+    }
+    &:hover .track-info {
+        color: $linksColor
+    }
+}
+
+
+.wavy {
+    animation-name: wavy;
+    animation-duration: 1.2333s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+
+@media (min-width: $lgBreakPoint) {
+    .spotify-now-playing-widget {
+        font-size: 15.33px;
+        .badge {
+            max-width: none;
+            width: 100%;
+            color: black;
+        }
+        .badge-details{
+            //background: transparent;
+        }
+        .album-art {
+            width: 80.27px;  
+            height:80.27px;
+        }
+     
+    }
+}

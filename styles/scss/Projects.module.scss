@@ -1,0 +1,18 @@
+@import '../variables/global.variables.scss'; 
+@import '../animations/global.animations.scss'; 
+
+.works {
+    overflow: auto;
+    max-height: none;
+}
+
+.projects {
+    width: auto;
+    flex: 1;
+}
+
+.building {
+    @include radialGradientBackground($orb-color2, $defaultBg);
+    flex-direction: column;
+    min-height: 100vh;
+}

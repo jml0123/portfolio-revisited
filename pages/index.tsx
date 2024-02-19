@@ -1,32 +1,77 @@
-import Head from 'next/head';
-import styles from '../styles/css/Home.module.css';
+import { useState, useEffect } from 'react';
+import { SiMinutemailer, SiLinkedin, SiGithub } from "react-icons/si";
+import { BsMusicPlayerFill } from "react-icons/bs";
+
+import SpotifyNowPlayingWidget from '../components/SpotifyWidget/SpotifyWidget';
+import styles from '../styles/scss/Home.module.scss'; // Use import and assign to a variable
+import sharedStyles from '../styles/scss/Shared.module.scss'; // Use import and assign to a variable
+import { ArtImageData } from './api/getRandomArtwork';
+import { fetchRandomArtwork } from '../helpers/interactions';
 
 export default function Home() {
+  const [spotifyData, setSpotifyData] = useState(null);
+  const [randomArtImg, setRandomArtImg] = useState<ArtImageData | null>(null);
+
+  useEffect(() => {
+    // Fetch data when the component mounts
+    fetchSongData();
+    fetchRandomArtwork(setRandomArtImg);
+    // Fetch data every 1 minute (60,000 milliseconds)
+    const intervalId = setInterval(fetchSongData, 60000);
+
+    // Cleanup the interval when the component is unmounted
+    return () => clearInterval(intervalId);
+  }, []); 
+
+  const fetchSongData = async () => {
+    try {
+      const response = await fetch('https://spotify-portfolio-widget.herokuapp.com/currently-playing');
+      if (response.ok) {
+        const data = await response.json();
+        setSpotifyData(data);
+      } else {
+        console.error('Failed to fetch data');
+      }
+    } catch (error) {
+      console.error('Error fetching data:', error);
+      setSpotifyData(null);
+    }
+  };
+
+  const ctaIconSize = 18;
+
   return (
-    <body className='intro-body'>
-    <main className="intro">
-        <div className="intro-wrapper">
-            <div className="intro-content-wrapper">
-                <div className="title-bar">/ software developer</div>
-                <div className="intro-content-wrapper--heading">
-                    <h1><span className="name-span">Hi I'm Miguel Lorenzo_</span> a generalist software engineer 
-                        <span className="intro-content-2">and creative technologist based in Brooklyn NY. Balancer of micro implementation and macro ideas. 
-                        Synth patch tweaker and former artist manager with strategy consulting experience.
-                        </span></h1>
-                </div>
-                <div className="socials-wrapper">
-                    <a href="https://www.linkedin.com/in/jml123" target="_blank"><img className="socials-icon" src="img/icons/linkedin.png" alt="LinkedIn"/></a>
-                    <a href="https://github.com/jml0123" target="_blank"><img className="socials-icon" src="img/icons/github.png" alt="github"/></a>
-                    <a href="https://codesandbox.io/u/jml0123" target="_blank"><img className="socials-icon" src="img/icons/codesandbox.png" alt="CodeSandbox"/></a>
-                    <a href="https://beacons.ai/plygid"><img className="socials-icon" src="img/icons/cd.png" alt="My Music"/></a>
-                </div>
+    <>
+      <main className={styles.intro}> 
+        <div className={styles['intro-wrapper']}> 
+          <div className={styles['intro-content-wrapper']}> 
+          <div className={styles['intro-content-wrapper--main']}>
+             {/* TODO: Make the below animated with different titles */}
+            <div className={styles['title-bar']}>welcome</div> 
+            <div className={styles['socials-wrapper']}>
+              <a href="mailto:jsmglorenzo@gmail.com" target="_blank"><SiMinutemailer size={ctaIconSize}/></a>
+              <a href="https://www.linkedin.com/in/jml123" target="_blank"><SiLinkedin size={ctaIconSize}/></a>
+              <a href="https://github.com/jml0123" target="_blank"><SiGithub size={ctaIconSize}/></a>
+              <a href="https://beacons.ai/plygid"><BsMusicPlayerFill size={ctaIconSize}/></a>
             </div>
+            </div>
+            <div className={styles['intro-content-wrapper--heading']}> 
+            <h1><span className={styles['name-span']}>
+                        {'>'}_hi, i'm miguel</span>
+                        <span className={styles['intro-content-2']}> a software engineer, xr and creative dev, and dj in Brooklyn.  
+                       As a developer, I strive to implement innovative concepts with meticulous detail and clarity. As a creative, I envision new environments and possibilities.
+                        </span></h1>
+            </div>
+            <div className={styles['spotify-widget-wrapper']}>
+              {spotifyData && <SpotifyNowPlayingWidget data={spotifyData} />}
+            </div>
+          </div>
         </div>
-    </main>
-    <div className="side-accent art-div1">
-        <img src="img/artworks/Hagihara_4.jpg"/>
-        <span className="art-caption">萩原 卓哉 (Hagihara Takuya)</span>
-    </div>
-    </body>
+      </main>
+      {randomArtImg && <div className={`${styles['side-accent']} ${sharedStyles['art-div-1']}`} style={{ cursor: 'pointer' }} onClick={() => fetchRandomArtwork(setRandomArtImg)}>
+        <img src={randomArtImg.path} />
+        <span className={sharedStyles['art-caption']}>{randomArtImg.fileName}</span> 
+      </div>}
+    </>
   );
 }
