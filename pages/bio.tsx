@@ -36,9 +36,8 @@ export default function BioPage() {
           <div className={styles['bio-wrapper']}>
             <p>
             I’m a Brooklyn-based software engineer, XR, and creative developer who loves to build new ideas to life. 
-                  With a weird mix of experiences in corporate strategy, project and artist management, 
-                  my background has enabled me to take on a macro and micro perspective to building
-                  software.
+                  With a diverse mix of experiences in engineering, corporate strategy and artist management, 
+                  my background has enabled me to practice engineering as a more a holistic process.
                   <br /><br />
                   I immigrated from the Philippines in 2007 and went to NYU for my undergrad While in school, I was heavily involved in the music scene
                   and worked as a part-time artist manager. After a scheduling mixup in college, I needed to take an extra class to fulfill my credits.
@@ -54,7 +53,7 @@ export default function BioPage() {
                         <ul>
                             <li>Cooking new recipes / trying new foods</li>
                             <li>Going to live events & venues</li>
-                            <li>Museums, art and design</li>
+                            <li>Appreciating art and design</li>
                         </ul>
                         <h1>Books (Favorites & Currently reading)
                             <span role="img" aria-label="books">📚</span>

@@ -57,9 +57,9 @@ export default function Home() {
             </div>
             <div className={styles['intro-content-wrapper--heading']}> 
             <h1><span className={styles['name-span']}>
-                        {'>'} i'm miguel_</span> a software eng,
-                        <span className={styles['intro-content-2']}> creative technologist, and dj in Brooklyn.  
-                       As a developer, I strive to implement innovative ideas with meticulous detail and clarity. As a creative, I channel sentiments and envision + build new environments and possibilities.
+                        {'>'}_hi, i'm miguel</span>
+                        <span className={styles['intro-content-2']}> a software engineer, xr and creative dev, and dj in Brooklyn.  
+                       As a developer, I strive to implement innovative concepts with meticulous detail and clarity. As a creative, I envision new environments and possibilities.
                         </span></h1>
             </div>
             <div className={styles['spotify-widget-wrapper']}>

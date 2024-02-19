@@ -47,7 +47,7 @@ const FilterableGrid: React.FC<FilterableGridProps> = ({ items }) => {
   };
 
   const filteredItems = activeFilters.length
-    ? items.filter((item) => activeFilters.every((filter) => item.tech.includes(filter)))
+    ? items.filter((item) => activeFilters.some((filter) => item.tech.includes(filter)))
     : items;
 
   return (
