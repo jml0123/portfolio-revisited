@@ -218,7 +218,7 @@
 }
 
 .building {
-  background: radial-gradient(circle, #eef4a4 13%, #FFFCF9 48%) 0 0 no-repeat;
+  background: radial-gradient(circle, #ef9a5e 13%, #FFFCF9 48%) 0 0 no-repeat;
   background-attachment: fixed;
   flex-direction: column;
   min-height: 100vh;
