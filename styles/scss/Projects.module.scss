@@ -12,7 +12,7 @@
 }
 
 .building {
-    @include radialGradientBackground($orb-color3, $defaultBg);
+    @include radialGradientBackground($orb-color2, $defaultBg);
     flex-direction: column;
     min-height: 100vh;
 }
