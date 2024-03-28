@@ -24,7 +24,7 @@ export default function BioPage() {
       </header>
       <section role="region" aria-label="content">
         <div className={styles['focus-img-wrapper']}>
-          <img className={styles['focus-img']} src="img/misc/self_p.jpg" alt="(Me)" />
+          <img className={styles['focus-img']} src="img/misc/edited_pixely.jpg" alt="(Me :~))" />
         </div>
       </section>
       <section role="region" aria-label="content-2" className={styles['bio']}>
