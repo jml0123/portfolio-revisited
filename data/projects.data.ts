@@ -9,6 +9,8 @@ export const priorityTechList = [
   "Angular",
   "Nest.js",
 ]
+
+// TODO: Add myrtle avenue train station mockup project.
 export const projectsGridData: GridItemData[] = [
         {
           title: "Memory Dealer (XR)",

@@ -61,6 +61,7 @@ $radialGradientBg: radial-gradient(circle, $orb-color3 13%, $defaultBg 48%) 0 0 
 // Filters
 $contentDropShadowDefault: drop-shadow(-5px -2.5px 12px rgba(0, 0, 0, 0.25));
 $contentDropShadowLighter: drop-shadow(-5px -2.5px 12px rgba(154, 154, 154, 0.13));
+$contentDropShadowSubtle: drop-shadow(3px 15px 24px 0px rgba(5, 5, 5, 0.366));
 $mixBlend1: exclusion;
 
 // Text

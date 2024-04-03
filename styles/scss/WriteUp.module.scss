@@ -1,0 +1,21 @@
+@import '../variables/global.variables.scss'; 
+@import '../animations/global.animations.scss'; 
+
+.write-up-page-wrapper {
+    margin-top: 7vh;
+    padding: 22px 30px;
+    width: 100vw;
+}
+.write-up-page {
+    margin: 5px;
+    border: 1px dashed $subtleBlack;
+    padding: 66px;
+    background-color: $defaultBg;
+    filter: $contentDropShadowSubtle;
+}
+
+@media (min-width: $lgBreakPoint) {
+    .write-up-page-wrapper {
+        padding: 12px 116px;
+    }
+}
