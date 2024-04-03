@@ -59,7 +59,7 @@ export default function Home() {
             <h1><span className={styles['name-span']}>
                         {'>'}_hi, i'm miguel</span>
                         <span className={styles['intro-content-2']}> a software engineer, xr and creative dev, and dj in Brooklyn.  
-                       As a developer, I strive to implement innovative concepts with meticulous detail and clarity. As a creative, I envision new environments and possibilities.
+                       As an engineer, I strive to build forward-thinking concepts with meticulous detail and clarity. As a creative, I envision resonant environments and possibilities.
                         </span></h1>
             </div>
             <div className={styles['spotify-widget-wrapper']}>

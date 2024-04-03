@@ -80,17 +80,17 @@
 .focus-img {
     display: none;
     padding: 7%;
-    margin-left: -8vw;
+    margin-left: -300px;
     object-fit: cover;
     // border-radius: 10px; 
-    border-radius: 62% / 42%;
+    // border-radius: 62% / 42%;
     position: absolute;
     width: 36vw;
-    max-width: 800px;
+    max-width: 533px;
     filter: $contentDropShadowLighter;
     &-wrapper {
-        min-width: 60%;
-        max-width: 60%;
+        min-width: 50%;
+        max-width: 50%;
         position: fixed;
         min-height: 100vh;
         max-height: 100vh;
@@ -135,6 +135,6 @@
     }
     .focus-img {
         display: block;
-        opacity: 0.88;
+        opacity: 0.93;
     }
 }

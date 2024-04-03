@@ -24,7 +24,7 @@ export default function BioPage() {
       </header>
       <section role="region" aria-label="content">
         <div className={styles['focus-img-wrapper']}>
-          <img className={styles['focus-img']} src="img/misc/edited_pixely.jpg" alt="(Me :~))" />
+          <img className={styles['focus-img']} src="img/misc/ps2-style.jpg" alt="(Me :~))" />
         </div>
       </section>
       <section role="region" aria-label="content-2" className={styles['bio']}>
@@ -35,7 +35,7 @@ export default function BioPage() {
           </div>
           <div className={styles['bio-wrapper']}>
             <p>
-            I’m a Brooklyn-based software engineer, XR, and creative developer who loves to build new ideas to life. 
+            I’m a software engineer, XR, and creative developer living in Brooklyn who loves to build new ideas to life. 
                   With a diverse mix of experiences in engineering, corporate strategy and artist management, 
                   my background has enabled me to practice engineering as a more a holistic process.
                   <br /><br />

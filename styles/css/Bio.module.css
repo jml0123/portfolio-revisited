@@ -280,17 +280,16 @@
 .focus-img {
   display: none;
   padding: 7%;
-  margin-left: -8vw;
+  margin-left: -300px;
   object-fit: cover;
-  border-radius: 62%/42%;
   position: absolute;
   width: 36vw;
-  max-width: 800px;
+  max-width: 533px;
   filter: drop-shadow(-5px -2.5px 12px rgba(154, 154, 154, 0.13));
 }
 .focus-img-wrapper {
-  min-width: 60%;
-  max-width: 60%;
+  min-width: 50%;
+  max-width: 50%;
   position: fixed;
   min-height: 100vh;
   max-height: 100vh;
@@ -321,7 +320,7 @@
   }
   .focus-img {
     display: block;
-    opacity: 0.88;
+    opacity: 0.93;
   }
 }
 
