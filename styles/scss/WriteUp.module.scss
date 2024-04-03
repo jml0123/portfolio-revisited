@@ -10,8 +10,36 @@
     margin: 5px;
     border: 1px dashed $subtleBlack;
     padding: 66px;
+    width: 100%;
     background-color: $defaultBg;
     filter: $contentDropShadowSubtle;
+
+    h1 {
+        font-size: $fontSizeXl;
+        font-family: $fontPrimary;
+        margin: 0.4em auto;
+    }
+    h2 {
+        font-size: large;
+        font-family: $fontMonoGeistLight;
+        color: $gridItemBorderNight;
+    }
+    p {
+        margin: 1em 0.33em;
+        padding: 1em;
+    }
+    img {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.write-up-img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (min-width: $lgBreakPoint) {
