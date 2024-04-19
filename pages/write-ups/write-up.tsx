@@ -11,7 +11,9 @@ const writeUp = (WrappedComponent: React.ComponentType) => {
             <main>
                 <div className={styles["write-up-page-wrapper"]}>
                 <div className={styles["write-up-page"]}>
+                    <div className={styles["content-wrapper"]}>
                     <WrappedComponent {...props}/>
+                    </div>
                 </div>
                 </div>
             </main>

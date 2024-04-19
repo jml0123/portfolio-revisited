@@ -35,15 +35,38 @@
     }
 }
 
+.write-up-coverimg {
+    width: 100%;
+    max-height: 500px;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    margin: 1em 0;
+    background-size: 100% 100%;
+    background-position: 'center';
+    background-repeat: 'no-repeat';
+}
+
 .write-up-img {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    &--caption {
+        font-size: 12px;
+        color: $gridItemBorderNight;
+        font-style: italic;
+        padding-top: 4px;
+    }
 }
+
 
 @media (min-width: $lgBreakPoint) {
     .write-up-page-wrapper {
         padding: 12px 116px;
+    }
+    .content-wrapper {
+        margin: 0 auto;
+        max-width: 66vw;
     }
 }
