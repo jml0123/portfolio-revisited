@@ -221,16 +221,6 @@
   background-color: #FFFCF9;
   filter: drop-shadow(3px 15px 24px 0px rgba(5, 5, 5, 0.366));
 }
-.write-up-page h1 {
-  font-size: 45px;
-  font-family: "Geist-SansSerif", sans-serif;
-  margin: 0.4em auto;
-}
-.write-up-page h2 {
-  font-size: large;
-  font-family: "Geist-Light-Mono", monospace;
-  color: #494739;
-}
 .write-up-page p {
   margin: 1em 0.33em;
   padding: 1em;
@@ -239,6 +229,36 @@
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+
+.write-up-header--category {
+  background-color: #212121;
+  color: #FFFCF9;
+  padding: 1.1em 0.88em;
+}
+.write-up-header--category span {
+  font-family: "Geist-SansSerif", sans-serif;
+  font-size: 13px;
+}
+
+.write-up-header {
+  min-height: 300px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-items: flex-start;
+  background-color: #ef9a5e;
+  padding: 0.88em;
+}
+.write-up-header h1 {
+  font-size: 45px;
+  font-family: "Geist-Light-Mono", monospace;
+  margin: 0.4em auto;
+}
+.write-up-header h2 {
+  font-size: larger;
+  font-family: "Geist-Light-Mono", monospace;
+  color: #494739;
 }
 
 .write-up-coverimg {
@@ -264,6 +284,10 @@
   color: #494739;
   font-style: italic;
   padding-top: 4px;
+}
+
+.content-wrapper {
+  font-family: "Geist-Light-Mono", monospace;
 }
 
 @media (min-width: 1024px) {

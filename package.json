@@ -14,6 +14,7 @@
     "react-dom": "18.2.0",
     "react-icons": "^5.0.1",
     "react-parallax-tilt": "^1.7.221",
+    "react-share": "^5.1.0",
     "react-spring": "^9.7.3"
   },
   "engines": {
