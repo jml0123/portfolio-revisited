@@ -4,6 +4,7 @@ import { fetchRandomArtwork } from '../helpers/interactions';
 import styles from '../styles/scss/Bio.module.scss'; 
 import sharedStyles from '../styles/scss/Shared.module.scss'; 
 import { ArtImageData } from './api/getRandomArtwork';
+import Tilt from 'react-parallax-tilt';
 
 export default function BioPage() {
 
@@ -30,8 +31,14 @@ export default function BioPage() {
       <section role="region" aria-label="content-2" className={styles['bio']}>
         <div className={styles['bio-container']}>
           <div className={`${styles['bio-container--image']} ${styles['art-div2']}`} style={{ cursor: 'pointer' }} onClick={() => fetchRandomArtwork(setRandomArtImg)}>
-            <img src={randomArtImg?.path} alt="Bio Profile" />
-            <span className={styles['art-caption']}>{randomArtImg?.fileName}</span>
+          <Tilt
+          gyroscope={true}
+          transitionSpeed={222}
+          transitionEasing='cubic-bezier(0.16, 1, 0.3, 1);'
+          ><img src={randomArtImg?.path} alt="Bio Profile" />
+                    <span className={sharedStyles['art-caption']}>{randomArtImg?.fileName}</span>
+
+          </Tilt>
           </div>
           <div className={styles['bio-wrapper']}>
             <p>

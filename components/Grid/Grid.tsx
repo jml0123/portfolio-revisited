@@ -3,6 +3,8 @@ import styles from '../../styles/scss/Grid.module.scss';
 import sharedStyles from '../../styles/scss/Shared.module.scss';
 import { GridItemData } from './Grid.types';
 import { useSpring, animated } from '@react-spring/web';
+import Tilt from 'react-parallax-tilt';
+
 const defaultImgPath = 'img/projects/default.webp';
 
 export const Grid: React.FC<{items: GridItemData[]}> = ({items}) => {
@@ -10,6 +12,11 @@ export const Grid: React.FC<{items: GridItemData[]}> = ({items}) => {
         <div className={styles['grid-wrapper']}>
           <div className={styles['grid']}>
             {/* SPECIAL GRID ITEM */}
+            <Tilt
+          gyroscope={true}
+          transitionSpeed={222}
+          transitionEasing='cubic-bezier(0.16, 1, 0.3, 1);'
+          >
             <a href="mailto:jsmglorenzo@gmail.com" target="_blank" className={styles['grid-contact-link']}>
               <div className={`${styles['grid-item']} ${styles['grid-item']} ${styles['blank-work']}`}>
                 <div className={styles['grid-item-container']}>
@@ -27,6 +34,7 @@ export const Grid: React.FC<{items: GridItemData[]}> = ({items}) => {
                 </div>
               </div>
             </a>
+            </Tilt>
             {/* END SPECIAL GRID ITEM */}
             {items.map((itemData, i) => <GridItem data={itemData} index={items.length - (i)}/>)}
           </div>

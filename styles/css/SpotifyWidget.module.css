@@ -261,12 +261,11 @@
   color: rgba(42, 42, 42, 0.651);
 }
 .spotify-now-playing-widget .album-art {
-  margin: 0 1em 0 0;
+  margin: 0 2.66em 0 0;
   display: inline-block;
   padding: 0;
   width: 69.66px;
   height: 69.66px;
-  box-shadow: -1.33px 3.33px 6px rgba(0, 0, 0, 0.16); /* Add a subtle drop shadow */
 }
 .spotify-now-playing-widget:hover .now-playing {
   color: #0186FF;

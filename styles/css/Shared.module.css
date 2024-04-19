@@ -225,7 +225,7 @@
   font-size: 12px;
   color: #494739;
   font-style: italic;
-  padding-top: 4px;
+  display: block;
 }
 
 .blur-bg {
