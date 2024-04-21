@@ -7,9 +7,9 @@
     width: 100vw;
 }
 .write-up-page {
-    margin: 5px;
+    margin: 3px;
     border: 1px dashed $subtleBlack;
-    padding: 66px;
+    padding: 5px;
     width: 100%;
     background-color: $defaultBg;
     filter: $contentDropShadowSubtle;
@@ -129,5 +129,10 @@
     .content-wrapper {
         margin: 0 auto;
         max-width: 66vw;
+    }
+
+    .write-up-page {
+        padding: 66px;
+        margin: 5px;
     }
 }

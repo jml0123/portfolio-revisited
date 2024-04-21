@@ -24,7 +24,7 @@ function AudioHijack() {
         <p>
             When we started the prototyping phase of XR Bootcamp in fall of last year, I was deep into crate digging for a few upcoming sets
              (including an amazing b2b @ <a href="https://ra.co/events/1749821?returnUrl=%2Fdj%2Fspeckledegg" target="_blank">elsewhere Zone One</a> last year with otugi,
-            an phenomenal music producer and cinematographer).
+            a phenomenal music producer and cinematographer).
             Commuting around the city was fitting time to have a healthy stream of audio, which also gave some life to idle moments sitting on the bus or walking down a few blocks. At the time, I was also seeing articles about the upcoming Vision Pro release, and something about Ray Ban AR glasses, 
             and I thought -- "what would the listening experience look like in a world of wearables and mixed reality?". 
             <br/><br/>
@@ -37,7 +37,7 @@ function AudioHijack() {
           <span className={styles['write-up-img--caption']}>XR Music Player UI concept</span> 
         </div>
   
-          I thought a music player in augmented reality would enrich the intended experience of the work, but still let the listener focus on their direct surroundings; a heads-up-display (HUD) in a first-person experience. The imagined concept blended the minimalist, dreamy and cooly-optimistic tones of Gen-X soft club with a forward-looking, suggestively "cybernetic" feel -- your reality was slowly being taken over by the art. 
+          I thought a music player in augmented reality would enrich the intended experience of the work, but still let the listener focus on their direct surroundings; a heads-up-display (HUD) in a first-person experience. The imagined concept blended the understated, dreamy and cooly-optimistic tones of Gen-X soft club with a forward-looking, suggestively "cybernetic" feel -- your reality was slowly being taken over by the art. 
           Audio hijack.  
           <br/><br/>
           On top of work, I had around a few hours to a day to make the prototype concept. Using Unity and a Quest 2, I wanted my basic prototype to:
