@@ -7,7 +7,8 @@ import { priorityTechList } from '../../data/projects.data';
 interface FilterableGridProps {
   items: GridItemData[];
 }
-
+// TODO: allow routing props to auto select categories.
+// E.g. selected=XR
 const FilterableGrid: React.FC<FilterableGridProps> = ({ items }) => {
   const [activeFilters, setActiveFilters] = useState<string[]>([]);
 

@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from '../../styles/scss/WriteUp.module.scss'; 
 
-// Route is /write-ups/{project name}
+
+export const writeUpUrlPath = "/dev-notes"
 
 const writeUp = (WrappedComponent: React.ComponentType) => {
 

@@ -6,4 +6,5 @@ export interface GridItemData {
     liveUrl?: string;
     repoUrl?: string;
     previewUrl?: string;
+    writeUpUrl?: string;
 }

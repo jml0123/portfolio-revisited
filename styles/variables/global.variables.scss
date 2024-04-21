@@ -15,7 +15,7 @@ $fontMonoGeistMed: "Geist-Medium-Mono", monospace;
 $fontMonoGeistSemibold: "Geist-Semibold-Mono", monospace;
 $fontMonoGeistLight: "Geist-Light-Mono", monospace;
 $fontMonoGeistVariable: "Geist-Variable-Mono", monospace;
-
+$fontMonoGeistBold: "Geist-Bold-Mono", monospace;
 
 /* FONTS */ 
 $fontPrimary: $fontSansGeist;
@@ -36,6 +36,9 @@ $contentLineHeight: 1.3;
 $paddingDefault: 22px;
 $paddingContent: 11px;
 $subtleTextPadding: 15px;
+
+/* MARGIN */
+$varMarginSm: 0.37em;
 
 /* COLORS */
 // Interaction

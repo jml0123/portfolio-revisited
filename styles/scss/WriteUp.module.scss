@@ -14,8 +14,19 @@
     background-color: $defaultBg;
     filter: $contentDropShadowSubtle;
     p {
-        margin: 1em 0.33em;
+        margin: 1em $varMarginSm;
         padding: 1em;
+        span {
+            font-family: $fontMonoGeistBold;
+            font-weight: bold;
+        }
+    }
+    a {
+        color: $linksColor;
+    }
+    a:hover {
+        cursor: pointer;
+        text-decoration: underline;
     }
     img {
         max-width: 800px;
@@ -24,32 +35,49 @@
     }
 }
 
-.write-up-header--category {
-    background-color: $nightBg;
-    color: $defaultBg;
-    padding: 1.1em 0.88em;
-    span {
-        font-family: $fontPrimary;
-        font-size: $fontSizeDefault;
-    }
+.write-up--iframe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2em auto;
+    flex-direction: column;
 }
+
+
 .write-up-header {
-    min-height: 300px;
+    min-height: 255px;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     justify-items: flex-start;
     background-color: $orb-color2;
     padding: 0.88em;
+
     h1 {
         font-size: $fontSizeXl;
         font-family: $fontMonoGeistLight;
-        margin: 0.4em auto;
+        margin: $varMarginSm auto;
     }
     h2 {
         font-size: larger;
         font-family: $fontMonoGeistLight;
         color: $gridItemBorderNight;
+    }
+    &--category {
+        background-color: $nightBg;
+        color: $defaultBg;
+        padding: 1.1em 0.88em;
+        span {
+            font-family: $fontPrimary;
+            font-size: $fontSizeDefault;
+        }
+    }
+    &--back {
+        font-size: $fontSizeDefault;
+        margin: $varMarginSm 0;
+        a {
+            color: inherit;
+        }
     }
 }
 
@@ -78,9 +106,20 @@
     }
 }
 
+.write-up--footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    a { 
+        margin: $varMarginSm;
+    }
+}
+
 .content-wrapper {
     font-family: $fontNav;
 }
+
 
 @media (min-width: $lgBreakPoint) {
     .write-up-page-wrapper {

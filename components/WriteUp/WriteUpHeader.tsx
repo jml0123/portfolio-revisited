@@ -1,5 +1,6 @@
 import React from "react";
 import styles from '../../styles/scss/WriteUp.module.scss'; 
+import { IoReturnDownBackSharp } from "react-icons/io5";
 
 interface WriteUpHeaderProps {
     title: string;
@@ -12,6 +13,11 @@ interface WriteUpHeaderProps {
 const WriteUpHeader: React.FC<WriteUpHeaderProps> = (props: WriteUpHeaderProps) => {
     return (
         <div className={styles['write-up-header--wrapper']}>
+        <div className={styles['write-up-header--back']}>
+            <a href="/projects">
+                <IoReturnDownBackSharp /> Projects
+            </a>
+        </div>
         <div className={styles['write-up-header--category']} style={{ backgroundColor: props.categoryColor}}>
         <span>{props.category}</span>
         </div>

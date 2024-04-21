@@ -29,11 +29,12 @@ export const projectsGridData: GridItemData[] = [
         repoUrl: "",
       },
       {
-        title: "Audio Hijack (XR Music Interface)",
+        title: "Audio Hijack",
         description: "A music concept for a new world of mixed reality, featuring metadata displayed in 3d space, and personalized visuals based on the song",
         tech: ["Unity", "XR", "AR", "C#", "Spotify API"],
         imageUrl: "img/projects/AudioHijack.png",
         repoUrl: "https://github.com/jml0123/audio_hijack_xr",
+        writeUpUrl: "audio-hijack"
       },
       {
         title: "Are You Here (XR)",

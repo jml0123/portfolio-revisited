@@ -1,6 +1,7 @@
-import { useEffect } from 'react';
+import { MdDescription } from 'react-icons/md';
 import styles from '../../styles/scss/Grid.module.scss';
 import sharedStyles from '../../styles/scss/Shared.module.scss';
+import { writeUpUrlPath } from '../WriteUp/WriteUp';
 import { GridItemData } from './Grid.types';
 import { useSpring, animated } from '@react-spring/web';
 import Tilt from 'react-parallax-tilt';
@@ -57,6 +58,8 @@ export const GridItem: React.FC<{ data: GridItemData, index: number }> = ({ data
     gridArea: gridAreaStyles,
   }
 
+  const writeUpUrl = data.writeUpUrl ?  writeUpUrlPath + "/" + data.writeUpUrl : null;
+
   return (
     <animated.div style={animatedStyles} className={`${styles['grid-item']}`} >
       <div className={styles['grid-item-container']}>
@@ -76,6 +79,7 @@ export const GridItem: React.FC<{ data: GridItemData, index: number }> = ({ data
                     {data.liveUrl && <a className={styles["live"]} target="_blank" href={data.liveUrl}>Live</a>}
                     {data.repoUrl && <a className={styles["repo"]} target="_blank" href={data.repoUrl}>Repo</a>}
                     {data.previewUrl && <a className={styles["preview"]} target="_blank" href={data.previewUrl}>Preview</a>}
+                    {writeUpUrl && <a className={styles["preview"]} href={writeUpUrl}><MdDescription /> Notes</a>}
                 </div>
             </div>
           </div>
