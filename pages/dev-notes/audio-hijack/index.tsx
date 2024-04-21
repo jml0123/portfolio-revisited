@@ -1,6 +1,7 @@
 import writeUp from "../../../components/WriteUp/WriteUp"
 import WriteUpHeader from "../../../components/WriteUp/WriteUpHeader";
 import styles from '../../../styles/scss/WriteUp.module.scss'; 
+import sharedStyles from '../../../styles/scss/Shared.module.scss';
 
 
 // TODO: Add share sheet component
@@ -17,7 +18,7 @@ function AudioHijack() {
         <p><span>Music is a rich expression, digitally consolidated into a waveform, album art, and text data. What if we can build on top of that experience to bring out more of it's intended qualities?</span></p>
           <div className={styles['write-up-img']}>
           <img src='/img/dev-notes/audio-hijack/audio-hijack-inspo.png'></img>
-          <span className={styles['write-up-img--caption']}>Test caption</span> 
+          <span className={styles['write-up-img--caption']}>Style Inspiration</span> 
         </div>
 
         <p>
@@ -32,7 +33,7 @@ function AudioHijack() {
         </p>
 
         <div className={styles['write-up--iframe']}>
-          <iframe width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F33lJqMlOmudCLFQ2r9gQXU%2FAudioPassthrough%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DLH4SC1UJdkdriqxe-1"></iframe>
+          <iframe width="100%" height="433" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F33lJqMlOmudCLFQ2r9gQXU%2FAudioPassthrough%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DLH4SC1UJdkdriqxe-1"></iframe>
           <span className={styles['write-up-img--caption']}>XR Music Player UI concept</span> 
         </div>
   
@@ -60,7 +61,11 @@ function AudioHijack() {
 
 
           <div className={styles['write-up--iframe']}>
-          <iframe width="800" height="450" src="https://file.notion.so/f/f/3e00298e-a22f-478b-999a-30b7f8cdb74e/fe804235-7325-41fd-98b4-7e200b29eeee/PassThroughv0Demo.mp4?id=cd7bc1e6-a71e-4cf7-a136-04cdb57f7202&table=block&spaceId=3e00298e-a22f-478b-999a-30b7f8cdb74e&expirationTimestamp=1713816000000&signature=jsG-ygRDXgLCju1nY5nK78Hw-L2FwRTSe1Mo7NiLGss&downloadName=PassThroughv0Demo.mp4"></iframe>
+            <div className={sharedStyles['aspect-16-9']}>
+            <iframe className={sharedStyles['responsive-iframe']} 
+            src="https://file.notion.so/f/f/3e00298e-a22f-478b-999a-30b7f8cdb74e/fe804235-7325-41fd-98b4-7e200b29eeee/PassThroughv0Demo.mp4?id=cd7bc1e6-a71e-4cf7-a136-04cdb57f7202&table=block&spaceId=3e00298e-a22f-478b-999a-30b7f8cdb74e&expirationTimestamp=1713816000000&signature=jsG-ygRDXgLCju1nY5nK78Hw-L2FwRTSe1Mo7NiLGss&downloadName=PassThroughv0Demo.mp4">
+           </iframe>
+           </div>
           <span className={styles['write-up-img--caption']}>v.0 Audio Hijack</span> 
         </div>
 
