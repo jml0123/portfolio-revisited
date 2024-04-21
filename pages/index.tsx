@@ -1,12 +1,15 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, lazy, Suspense } from 'react';
 import { SiMinutemailer, SiLinkedin, SiGithub } from "react-icons/si";
 import { BsMusicPlayerFill } from "react-icons/bs";
 
-import SpotifyNowPlayingWidget from '../components/SpotifyWidget/SpotifyWidget';
 import styles from '../styles/scss/Home.module.scss'; // Use import and assign to a variable
 import sharedStyles from '../styles/scss/Shared.module.scss'; // Use import and assign to a variable
 import { ArtImageData } from './api/getRandomArtwork';
 import { fetchRandomArtwork } from '../helpers/interactions';
+import Tilt from 'react-parallax-tilt';
+
+// Dynamically import SpotifyNowPlayingWidget component
+const LazySpotifyNowPlayingWidget = lazy(() => import('../components/SpotifyWidget/SpotifyWidget'));
 
 export default function Home() {
   const [spotifyData, setSpotifyData] = useState(null);
@@ -45,33 +48,47 @@ export default function Home() {
       <main className={styles.intro}> 
         <div className={styles['intro-wrapper']}> 
           <div className={styles['intro-content-wrapper']}> 
-          <div className={styles['intro-content-wrapper--main']}>
-             {/* TODO: Make the below animated with different titles */}
-            <div className={styles['title-bar']}>welcome</div> 
-            <div className={styles['socials-wrapper']}>
-              <a href="mailto:jsmglorenzo@gmail.com" target="_blank"><SiMinutemailer size={ctaIconSize}/></a>
-              <a href="https://www.linkedin.com/in/jml123" target="_blank"><SiLinkedin size={ctaIconSize}/></a>
-              <a href="https://github.com/jml0123" target="_blank"><SiGithub size={ctaIconSize}/></a>
-              <a href="https://beacons.ai/plygid"><BsMusicPlayerFill size={ctaIconSize}/></a>
-            </div>
+            <div className={styles['intro-content-wrapper--main']}>
+               {/* Animated title */}
+              <div className={styles['title-bar']}>welcome</div> 
+              <div className={styles['socials-wrapper']}>
+                <a href="mailto:jsmglorenzo@gmail.com" target="_blank"><SiMinutemailer size={ctaIconSize}/></a>
+                <a href="https://www.linkedin.com/in/jml123" target="_blank"><SiLinkedin size={ctaIconSize}/></a>
+                <a href="https://github.com/jml0123" target="_blank"><SiGithub size={ctaIconSize}/></a>
+                <a href="https://beacons.ai/plygid"><BsMusicPlayerFill size={ctaIconSize}/></a>
+              </div>
             </div>
             <div className={styles['intro-content-wrapper--heading']}> 
-            <h1><span className={styles['name-span']}>
-                        {'>'}_hi, i'm miguel</span>
-                        <span className={styles['intro-content-2']}> a software engineer, xr and creative dev, and dj in Brooklyn.  
-                       As an engineer, I strive to build forward-thinking concepts with meticulous detail and clarity. As a creative, I envision resonant environments and possibilities.
-                        </span></h1>
+              <h1>
+                <span className={styles['name-span']}>{'>_hi, i\'m miguel'}</span>
+                <span className={styles['intro-content-2']}>
+                  &nbsp; a software engineer, xr and creative dev, and dj in Brooklyn.
+                  As an engineer, I strive to build forward-thinking concepts with meticulous detail and clarity.
+                  As a creative, I envision resonant environments and possibilities.
+                </span>
+              </h1>
             </div>
             <div className={styles['spotify-widget-wrapper']}>
-              {spotifyData && <SpotifyNowPlayingWidget data={spotifyData} />}
+              {/* Use Suspense for lazy-loaded component */}
+              <Suspense fallback={<div>Loading Spotify widget...</div>}>
+                {spotifyData && <LazySpotifyNowPlayingWidget data={spotifyData} />}
+              </Suspense>
             </div>
           </div>
         </div>
       </main>
-      {randomArtImg && <div className={`${styles['side-accent']} ${sharedStyles['art-div-1']}`} style={{ cursor: 'pointer' }} onClick={() => fetchRandomArtwork(setRandomArtImg)}>
-        <img src={randomArtImg.path} />
-        <span className={sharedStyles['art-caption']}>{randomArtImg.fileName}</span> 
-      </div>}
+      {/* Display random artwork */}
+      {randomArtImg && (
+        <div className={`${styles['side-accent']} ${sharedStyles['art-div-1']}`} style={{ cursor: 'pointer' }} onClick={() => fetchRandomArtwork(setRandomArtImg)}>
+          <Tilt
+          gyroscope={true}
+          transitionSpeed={222}
+          transitionEasing='cubic-bezier(0.16, 1, 0.3, 1);'
+          ><img src={randomArtImg.path} alt={randomArtImg.fileName} />
+          <span className={sharedStyles['art-caption']}>{randomArtImg.fileName}</span> 
+          </Tilt>
+        </div>
+      )}
     </>
   );
 }

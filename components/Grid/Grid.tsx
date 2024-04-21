@@ -1,8 +1,11 @@
-import { useEffect } from 'react';
+import { MdDescription } from 'react-icons/md';
 import styles from '../../styles/scss/Grid.module.scss';
 import sharedStyles from '../../styles/scss/Shared.module.scss';
+import { writeUpUrlPath } from '../WriteUp/WriteUp';
 import { GridItemData } from './Grid.types';
 import { useSpring, animated } from '@react-spring/web';
+import Tilt from 'react-parallax-tilt';
+
 const defaultImgPath = 'img/projects/default.webp';
 
 export const Grid: React.FC<{items: GridItemData[]}> = ({items}) => {
@@ -10,6 +13,11 @@ export const Grid: React.FC<{items: GridItemData[]}> = ({items}) => {
         <div className={styles['grid-wrapper']}>
           <div className={styles['grid']}>
             {/* SPECIAL GRID ITEM */}
+            <Tilt
+          gyroscope={true}
+          transitionSpeed={222}
+          transitionEasing='cubic-bezier(0.16, 1, 0.3, 1);'
+          >
             <a href="mailto:jsmglorenzo@gmail.com" target="_blank" className={styles['grid-contact-link']}>
               <div className={`${styles['grid-item']} ${styles['grid-item']} ${styles['blank-work']}`}>
                 <div className={styles['grid-item-container']}>
@@ -27,6 +35,7 @@ export const Grid: React.FC<{items: GridItemData[]}> = ({items}) => {
                 </div>
               </div>
             </a>
+            </Tilt>
             {/* END SPECIAL GRID ITEM */}
             {items.map((itemData, i) => <GridItem data={itemData} index={items.length - (i)}/>)}
           </div>
@@ -49,6 +58,8 @@ export const GridItem: React.FC<{ data: GridItemData, index: number }> = ({ data
     gridArea: gridAreaStyles,
   }
 
+  const writeUpUrl = data.writeUpUrl ?  writeUpUrlPath + "/" + data.writeUpUrl : null;
+
   return (
     <animated.div style={animatedStyles} className={`${styles['grid-item']}`} >
       <div className={styles['grid-item-container']}>
@@ -68,6 +79,7 @@ export const GridItem: React.FC<{ data: GridItemData, index: number }> = ({ data
                     {data.liveUrl && <a className={styles["live"]} target="_blank" href={data.liveUrl}>Live</a>}
                     {data.repoUrl && <a className={styles["repo"]} target="_blank" href={data.repoUrl}>Repo</a>}
                     {data.previewUrl && <a className={styles["preview"]} target="_blank" href={data.previewUrl}>Preview</a>}
+                    {writeUpUrl && <a className={styles["preview"]} href={writeUpUrl}><MdDescription /> Notes</a>}
                 </div>
             </div>
           </div>

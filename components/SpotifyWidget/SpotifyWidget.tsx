@@ -2,7 +2,7 @@ import { SpotifyWidgetData } from './SpotifyWidget.types';
 import styles from '../../styles/scss/SpotifyWidget.module.scss';
 import { useEffect, useState } from 'react';
 import Image from 'next/image'
-import { IoMusicalNotes } from "react-icons/io5";
+import Tilt from 'react-parallax-tilt';
 
 
 const SpotifyNowPlayingWidget: React.FC<{ data: SpotifyWidgetData }> = ({ data }) => {
@@ -95,13 +95,19 @@ const SpotifyNowPlayingWidget: React.FC<{ data: SpotifyWidgetData }> = ({ data }
     data.playing && trackImage ? (
       <div className={`${styles['spotify-now-playing-widget']} ${isFadingIn ? styles['fade-in'] : ''} ${isFadingOut ? styles['fade-out'] : ''}`}>
         <a href={data.url} target="_blank">
-          <Image
-            src={trackImage}
-            alt="now-playing-album-art"
-            width={75}
-            height={75}
-            className={styles['album-art']}
-          />
+          <Tilt
+          gyroscope={true}
+          transitionSpeed={222}
+          transitionEasing='cubic-bezier(0.16, 1, 0.3, 1);'
+          >
+            <Image
+              src={trackImage}
+              alt="now-playing-album-art"
+              width={75}
+              height={75}
+              className={styles['album-art']}
+            />
+          </Tilt>
           <div className={styles['badge']}>
             <span id="now-playing" className={styles['now-playing']}>♫ Now Playing ♫</span>
             <p className={styles['badge-details']} style={{ animationDuration: `${7.33 + (data.artist.length + data.track.length) * 0.113}s` }}>

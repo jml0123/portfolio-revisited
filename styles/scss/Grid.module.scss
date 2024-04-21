@@ -292,6 +292,7 @@
     }
 
     .blank-work {
+        margin: 4px;
         border: 2px dashed grey;
         background: transparent;
         display: block;
@@ -300,7 +301,8 @@
         box-shadow: none;
     }
     .blank-work:hover {
-        border: none;
+        box-shadow: none;
+        // border: none;
         background-image:url('/img/cloud_img.jpeg');
         color: #67A8DC;
         p {
