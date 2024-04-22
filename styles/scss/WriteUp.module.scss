@@ -3,19 +3,19 @@
 
 .write-up-page-wrapper {
     margin-top: 7vh;
-    padding: 22px 30px;
+    padding: 22px $varMarginSm;
     width: 100vw;
 }
 .write-up-page {
-    margin: 3px;
+    margin: 2.5px;
     border: 1px dashed $subtleBlack;
-    padding: 5px;
+    padding: 2.33px;
     width: 100%;
     background-color: $defaultBg;
     filter: $contentDropShadowSubtle;
     p {
-        margin: 1em $varMarginSm;
-        padding: 1em;
+        margin: 0.33em $varMarginSm;
+        padding: $varMarginSm;
         span {
             font-family: $fontMonoGeistBold;
             font-weight: bold;
@@ -46,7 +46,7 @@
 
 
 .write-up-header {
-    min-height: 255px;
+    min-height: 200px;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -55,19 +55,19 @@
     padding: 0.88em;
 
     h1 {
-        font-size: $fontSizeXl;
+        font-size: xx-large;
         font-family: $fontMonoGeistLight;
         margin: $varMarginSm auto;
     }
     h2 {
-        font-size: larger;
+        font-size: large;
         font-family: $fontMonoGeistLight;
         color: $gridItemBorderNight;
     }
     &--category {
         background-color: $nightBg;
         color: $defaultBg;
-        padding: 1.1em 0.88em;
+        padding: 0 0.88em;
         span {
             font-family: $fontPrimary;
             font-size: $fontSizeDefault;
@@ -134,5 +134,24 @@
     .write-up-page {
         padding: 66px;
         margin: 5px;
+        p {
+            margin: 1em $varMarginSm;
+            padding: 1em;
+        }
     }
+
+
+.write-up-header {
+    min-height: 255px;
+
+    h1 {
+        font-size: $fontSizeXl;
+    }
+    h2 {
+        font-size: larger;
+    }
+    &--category {
+        padding: 1.1em 0.88em;
+    }
+}
 }

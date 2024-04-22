@@ -29,7 +29,7 @@ function AudioHijack() {
             and I thought -- "what would the listening experience look like in a world of wearables and mixed reality?". 
             <br/><br/>
             Music listening is a focused activity, but not like movies or games that requires direct attention. 
-            With the listening experience having both of those passive and active qualities, what would an interface for an XR music experience look like?
+            With the listening experience having both of those passive and active qualities, what would an interface for an XR music experience look like? And, since we're building on top of an existing medium, how can we amplify the original intent behind the music?
         </p>
 
         <div className={styles['write-up--iframe']}>
@@ -37,7 +37,7 @@ function AudioHijack() {
           <span className={styles['write-up-img--caption']}>XR Music Player UI concept</span> 
         </div>
   
-          I thought a music player in augmented reality would enrich the intended experience of the work, but still let the listener focus on their direct surroundings; a heads-up-display (HUD) in a first-person experience. The imagined concept blended the understated, dreamy and cooly-optimistic tones of Gen-X soft club with a forward-looking, suggestively "cybernetic" feel -- your reality was slowly being taken over by the art. 
+          I thought a music player in augmented reality would enrich the intended experience of the work, but still let the listener focus on their direct surroundings; a heads-up-display (HUD) in a first-person experience that responded to events happening. The imagined concept blended the understated, dreamy and cooly-optimistic tones of Gen-X soft club with an overzealous, suggestively "cybernetic" feel -- your reality was slowly being taken over by the art. 
           Audio hijack.  
           <br/><br/>
           On top of work, I had around a few hours to a day to make the prototype concept. Using Unity and a Quest 2, I wanted my basic prototype to:
