@@ -62,7 +62,7 @@ export default function BioPage() {
                             <li>Going to live events & venues</li>
                             <li>Appreciating art and design</li>
                         </ul>
-                        <h1>Books (Favorites & Currently reading)
+                        <h1>Books (Noteables & Currently reading)
                             <span role="img" aria-label="books">📚</span>
                         </h1>
                         <ul>
