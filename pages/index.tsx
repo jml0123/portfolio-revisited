@@ -63,7 +63,7 @@ export default function Home() {
                 <span className={styles['name-span']}>{'>_hi, i\'m miguel'}</span>
                 <span className={styles['intro-content-2']}>
                   &nbsp; a software engineer, xr and creative dev, and dj in Brooklyn.
-                  As an engineer, I strive to build forward-thinking concepts with meticulous detail and clarity.
+                  As an engineer, I look to build forward-thinking and sustainable systems.
                   As a creative, I envision resonant environments and possibilities.
                 </span>
               </h1>

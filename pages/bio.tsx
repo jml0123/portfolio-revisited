@@ -69,6 +69,11 @@ export default function BioPage() {
                           <li>
                             The Pragmatic Programmer by David Thomas & Andrew Hunt
                           </li>
+                          <li>Assembling a Black Counter Culture by DeForrest Brown Jr.
+                            <span className={`${styles['label']} ${styles['label-progress']}`}>
+                              In Progress
+                            </span>
+                          </li>
                           <li>Mutual Aid by Dean Spade
                             <span className={`${styles['label']} ${styles['label-progress']}`}>
                               In Progress
@@ -76,15 +81,6 @@ export default function BioPage() {
                           </li>
                           <li>
                             Left Hand of Darkness by Ursula K. Le Guin
-                            <span className={`${styles['label']} ${styles['label-progress']}`}>
-                              In Progress
-                            </span>
-                          </li>
-                          <li>
-                            The Will to Change by bell hooks
-                            <span className={`${styles['label']} ${styles['label-progress']}`}>
-                              In Progress
-                            </span>
                           </li>
                         </ul>
                     </div> 
