@@ -78,9 +78,20 @@ export default function BioPage() {
                           </li>
                           <li>Mutual Aid by Dean Spade
                           </li>
+                          <li>Waves by Virginia Woolf
+                              <span className={`${styles['label']} ${styles['label-progress']}`}>
+                              In Progress
+                            </span>
+                            </li>
+                            <li>Invisible Cities by Italo Calvino
+                              <span className={`${styles['label']} ${styles['label-progress']}`}>
+                              In Progress
+                            </span>
+                            </li>
                           <li>
                             Left Hand of Darkness by Ursula K. Le Guin
                           </li>
+                          
                         </ul>
                     </div> 
                   </div>

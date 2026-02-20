@@ -60,9 +60,9 @@ export default function Home() {
             </div>
             <div className={styles['intro-content-wrapper--heading']}> 
               <h1>
-                <span className={styles['name-span']}>{'>_hi, i\'m miguel'}</span>
+                <span className={styles['name-span']}>{'>_hi, i\'m miguel (also known as "miko")'}</span>
                 <span className={styles['intro-content-2']}>
-                  &nbsp; a software engineer and musician in Brooklyn.
+                  &nbsp;a software engineer and musician in Brooklyn.
                   As an engineer, I look to build forward-thinking and sustainable systems.
                   As a creative, I envision resonant environments and possibilities.
                 </span>
