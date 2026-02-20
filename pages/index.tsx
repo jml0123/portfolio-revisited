@@ -62,7 +62,7 @@ export default function Home() {
               <h1>
                 <span className={styles['name-span']}>{'>_hi, i\'m miguel'}</span>
                 <span className={styles['intro-content-2']}>
-                  &nbsp; a software engineer, xr and creative dev, and dj in Brooklyn.
+                  &nbsp; a software engineer and musician in Brooklyn.
                   As an engineer, I look to build forward-thinking and sustainable systems.
                   As a creative, I envision resonant environments and possibilities.
                 </span>

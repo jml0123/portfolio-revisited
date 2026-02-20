@@ -25,7 +25,7 @@ export default function BioPage() {
       </header>
       <section role="region" aria-label="content">
         <div className={styles['focus-img-wrapper']}>
-          <img className={styles['focus-img']} src="img/misc/ps2-style.jpg" alt="(Me :~))" />
+          <img className={styles['focus-img']} src="img/misc/nara_deer.jpg" alt="(A film photo I took while visiting Nara, Japan :~))" />
         </div>
       </section>
       <section role="region" aria-label="content-2" className={styles['bio']}>
@@ -42,25 +42,25 @@ export default function BioPage() {
           </div>
           <div className={styles['bio-wrapper']}>
             <p>
-            I’m a software engineer, XR, and creative developer living in Brooklyn who loves to build new ideas to life. 
-                  With a diverse mix of experiences in engineering, corporate strategy and artist management, 
-                  my background has enabled me to practice engineering as a more a holistic process.
+                  I’m a software engineer and musician living in Brooklyn who loves to build new ideas to life. 
+                  With a diverse mix of experiences in engineering, strategy, artist management, and composition, 
+                  my background has enabled me to practice engineering and creative work as a more a holistic process.
                   <br /><br />
                   I immigrated from the Philippines in 2007 and went to NYU for my undergrad While in school, I was heavily involved in the music scene
                   and worked as a part-time artist manager. After a scheduling mixup in college, I needed to take an extra class to fulfill my credits.
                   Out of curiosity, I took an intro to web programming course and have never looked back since.
                   <br/> <br/>
-                  <i>Currently, I wear multiple hats as a backend developer at Cadoo (a fitness gaming startup funded by OpenAI's co-founder) and contribute my skills as a software developer to various other companies.
-                  </i>            
+              
                   </p>
             <div className={styles['interests']}>
               <h1>Interests
                         <span role="img" aria-label="interests">🌀</span>
                         </h1>
                         <ul>
-                            <li>Cooking new recipes / trying new foods</li>
-                            <li>Going to live events & venues</li>
-                            <li>Appreciating art and design</li>
+                            <li>Cooking, experimenting with new recipes / trying new foods</li>
+                            <li>Learning more about the history of different spices and cuisines</li>
+                            <li>Working on new sound design ideas and collaborating on music</li>
+                            <li>Film photography</li>
                         </ul>
                         <h1>Books (Noteables & Currently reading)
                             <span role="img" aria-label="books">📚</span>
@@ -69,15 +69,14 @@ export default function BioPage() {
                           <li>
                             The Pragmatic Programmer by David Thomas & Andrew Hunt
                           </li>
-                          <li>Assembling a Black Counter Culture by DeForrest Brown Jr.
-                            <span className={`${styles['label']} ${styles['label-progress']}`}>
+                            <li>Sikodiwa by Carl Lorenz Cervantes
+                              <span className={`${styles['label']} ${styles['label-progress']}`}>
                               In Progress
                             </span>
                           </li>
+                          <li>Assembling a Black Counter Culture by DeForrest Brown Jr.
+                          </li>
                           <li>Mutual Aid by Dean Spade
-                            <span className={`${styles['label']} ${styles['label-progress']}`}>
-                              In Progress
-                            </span>
                           </li>
                           <li>
                             Left Hand of Darkness by Ursula K. Le Guin
