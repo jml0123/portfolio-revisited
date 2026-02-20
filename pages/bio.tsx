@@ -25,7 +25,7 @@ export default function BioPage() {
       </header>
       <section role="region" aria-label="content">
         <div className={styles['focus-img-wrapper']}>
-          <img className={styles['focus-img']} src="img/misc/nara_deer.jpg" alt="(A film photo I took while visiting Nara, Japan :~))" />
+          <img className={styles['focus-img']} src="/img/misc/nara_deer.JPG" alt="(A film photo I took while visiting Nara, Japan :~))" />
         </div>
       </section>
       <section role="region" aria-label="content-2" className={styles['bio']}>
@@ -50,7 +50,7 @@ export default function BioPage() {
                   and worked as a part-time artist manager. After a scheduling mixup in college, I needed to take an extra class to fulfill my credits.
                   Out of curiosity, I took an intro to web programming course and have never looked back since.
                   <br/> <br/>
-              
+              r
                   </p>
             <div className={styles['interests']}>
               <h1>Interests
